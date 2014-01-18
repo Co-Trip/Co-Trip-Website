@@ -1,0 +1,437 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"va",
+				"value"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"mov",
+				"movingDot"
+			],
+			[
+				"Mo",
+				"movingDot"
+			],
+			[
+				"conr",
+				"controlMode"
+			],
+			[
+				"contro",
+				"controlMode"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"sli",
+				"sliderCtl"
+			],
+			[
+				"ini",
+				"initBackButton"
+			],
+			[
+				"pause",
+				"pauseButton"
+			],
+			[
+				"init",
+				"initTopBar"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"ali",
+				"vertical-align"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"h",
+				"height"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 187.0,
+		"selected_items":
+		[
+			[
+				"git com",
+				"Git: Quick Commit"
+			],
+			[
+				"gitcom",
+				"Git: Quick Commit"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git comm",
+				"Git: Quick Commit"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git st",
+				"Git: Status"
+			],
+			[
+				"git add",
+				"Git: Add Selected Hunk"
+			],
+			[
+				"git p",
+				"Git: Push"
+			],
+			[
+				"git statu",
+				"Git: Status"
+			],
+			[
+				"git add ",
+				"Git: Add..."
+			],
+			[
+				"gitpu",
+				"Git: Push"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ip",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"mak",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"make",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"convert to",
+				"ConvertToUTF8: Reload with Encoding"
+			],
+			[
+				"html",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"tid",
+				"Tidy PHP"
+			],
+			[
+				"tidy",
+				"Tidy PHP"
+			],
+			[
+				"ti",
+				"Tidy PHP"
+			],
+			[
+				"for",
+				"Format: Php"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/tomhu/Dropbox/Project/Personal Website/getId.js",
+		"/Volumes/BOOTCAMP/Private/Program Files (x86)/Games/Program Files (x86)/Cs1.6中文版/en.reg",
+		"/Volumes/BOOTCAMP/Private/Program Files (x86)/Games/Program Files (x86)/Cs1.6中文版/运行英文版.bat",
+		"/Users/tomhu/Dropbox/Project/Personal Website/index2.html",
+		"/Volumes/BOOTCAMP/Private/Program Files (x86)/Games/Program Files (x86)/Cs1.6中文版/运行中文版.bat",
+		"/Users/tomhu/.vim/plugin/indent_guides.vim",
+		"/Users/tomhu/.vim/autoload/AlignMaps.vim",
+		"/Users/tomhu/Applications/Wineskin/IGI1.app/Contents/Resources/drive_c/windows/win.ini",
+		"/Users/tomhu/Downloads/pptpd.sh",
+		"/Users/tomhu/Downloads/hw_ctree.xml",
+		"/Users/tomhu/Dropbox/Project/Bootstrap/dist/js/bootstrap.js",
+		"/Users/tomhu/Dropbox/Project/Bootstrap/dist/css/bootstrap-theme.css",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/User/Git.sublime-settings",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/Git/Git.sublime-settings",
+		"/Volumes/Publicfiles/CourseDocuments_课程文档/嵌入式系统导论_张惠娟/嵌入式系统导论实验/Mini2410-IV/6.2_Keyboard_Test/Source/keyboard_test.c",
+		"/Users/tomhu/Documents/Private/Learning/Uniweb/Task-1.html",
+		"/Users/tomhu/Documents/Private/Project/D2/Design/Resources/registerView/page2/note.txt",
+		"/Users/tomhu/Music/石進 - 夜的鋼琴曲II 2012/石进 - 夜的钢琴曲II.cue",
+		"/Users/tomhu/Documents/Private/Project/Personal Website/index.html",
+		"/Users/tomhu/Documents/Private/Project/ACE-interface/Experience Sharing/Experience Sharing/Images.xcassets/AppIcon.appiconset/Contents.json",
+		"/Users/tomhu/Downloads/Adobe/Premiere Pro/xfcs6/Crack-OSX/install.txt",
+		"/Users/tomhu/Documents/Private/Project/WeTongji/设计稿/guide.json",
+		"/Users/tomhu/Documents/Private/Project/Personal Website/index2.html",
+		"/Volumes/Publicfiles/CourseDocuments_课程文档/嵌入式系统导论_张惠娟/嵌入式系统导论实验/Mini2410-IV/6.1_Keypad_Test/Source/keypad_test.c",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/SublimeTmpl/Main.sublime-menu",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/User/SublimeTmpl.sublime-settings",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/Terminal/Default (OSX).sublime-keymap",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/Default (OSX).sublime-keymap",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/PhpTidy/PhpTidy.sublime-settings",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/SublimeTmpl/SublimeTmpl.sublime-settings",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/SublimeTmpl/Default (OSX).sublime-keymap",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/SublimeTmpl/Default.sublime-commands",
+		"/Users/tomhu/Documents/Private/Project/Personal Website/index.heml",
+		"/Users/tomhu/Documents/Private/Project/WeTongji/wetongji_mondev/WeTongjiSDK/ReadMe.md",
+		"/Users/tomhu/Documents/Private/Learning/Uniweb/css/css-1.css",
+		"/Applications/MAMP/htdocs/test.php",
+		"/Users/tomhu/Documents/Project/WeTongji/plain)",
+		"/Users/tomhu/Documents/Project/WeTongji/html) (1)",
+		"/Users/tomhu/Documents/Project/WeTongji/html)",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/proj.android/build_native.sh",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/HelpLayer.h",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/HelpLayer.cpp",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/ScrollLayer.h",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/ScrollLayer.cpp",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/ScoreLayer.h",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/MenuLayer.cpp",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/GameLayer.cpp",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/GameLayer.h",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/ScoreLayer.cpp",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/SettingLayer.h",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/SettingLayer.cpp",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/EnemyPaddle.cpp",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/MenuLayer.h",
+		"/Users/tomhu/Documents/Learning/demo/Gemfile",
+		"/Users/tomhu/Documents/Learning/Uniweb/Task-1.html",
+		"/Users/tomhu/Documents/Learning/Uniweb/css/css-1.css",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/Bounce/MenuLayer.cpp",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/Bounce/GameLayer.cpp",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/CocosDenshion/android/Android.mk",
+		"/Users/tomhu/Downloads/Software/EasyRecoveryV6.10/HB_EasyRecoveryPro6_汉化补丁/汉化说明.txt",
+		"/Users/tomhu/Documents/Learning/Uniweb/css-1.css",
+		"/Users/tomhu/Documents/Learning/Uniweb/untitled.html",
+		"/Users/tomhu/Documents/Learning/Uniweb/qsz.html",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/User/Default.sublime-snippet",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/TestScene.cpp",
+		"/Volumes/Semi_publicfiles/LabCenter/etc/bashrc",
+		"/Volumes/Semi_publicfiles/LabCenter/mac",
+		"/Volumes/Semi_publicfiles/LabCenter/etc/passwd",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/Bounce/proj.android/libs/armeabi/gdb.setup",
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/create-android-project.sh",
+		"/Users/tomhu/Downloads/insideViewChangeT45.js",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/User/PhpTidy.sublime-settings",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/User/PHP.sublime-settings",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/Applications/Sublime Text 2.app/Contents/MacOS/Sublime Text 2"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"guides_siz",
+			"restrict",
+			"runaction",
+			"NDK_ROOT",
+			"/home/daniel/",
+			"cp",
+			"3342 3032"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"/Users/tomhu/Documents/Learning/adt-bundle-mac-x86_64-20130219/",
+			"3242 3032"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 222.0,
+	"status_bar_visible": true
+}
