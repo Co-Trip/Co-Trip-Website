@@ -7,7 +7,7 @@
 		<meta name="description" content="Travel">
 		<meta name="keywords" content="Travel, Co-Trip, Coopertaion, Online">
 
-		<title>Co-Trip</title>
+		<title>Log in | Co-Trip</title>
 
 		<!--[if ls IE 10]>
 			<h1>Are you kidding? You are still using IE?</h1>
@@ -17,7 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 
 		<!-- Custom styles -->
-		<link rel="stylesheet" type="text/css" href="">
+		<link rel="stylesheet" type="text/css" href="./css/login.css">
 	</head>
 
 	<body>
@@ -51,16 +51,27 @@
 					    </form>
 
 					    <ul class="nav navbar-nav navbar-right">
-					    	<li><a href="accounts/register">Sign Up</a></li>
-								<li class="active"><a href="accounts/login">Log In</a></li>
+					    	<li><a href="accounts/register">Sign up</a></li>
+								<li class="active"><a href="accounts/login">Log in</a></li>
 					    </ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	
 
+		<!-- =====LOGIN===== -->
+		<div class="container">
+			<form class="form-login" role="form">
+				<h2 class="form-login-heading text-center">Log in</h2>
+				<input type="text" class="form-control" placeholder="Username" required autofocus>
+				<input type="password" class="form-control" placeholder="Password" required>
+				<label class="checkbox">
+					<input type="checkbox" value="remember-me"> Remember me
+				</label>
+				<button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+			</form>
+		</div>
 		
 		<!-- Bootstrap core Javascript -->
 		<script type="text/javascript" src="./js/bootstrap.js"></script>
