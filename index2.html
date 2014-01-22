@@ -59,6 +59,24 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- =====MAIN TEXT===== -->
+		<div class="jumbotron">
+			<h1>welcome to Co-Trip</h1>
+		    <p>this is the home page for Co-Trip</p>
+		    {% if user.is_authenticated %}
+		        <p>{{ user.username }}, welcome back. You can now <a href="accounts/logout"> log out</a>.</p>
+		    {% else %}
+		        <p>you can <a href = "accounts/login">log in</a> or <a href = "accounts/register">sign up</a></p>
+		    {% endif %}
+		</div>
+
+		<!-- =====FOOTER===== -->
+		<footer id="footer">
+			<div class="container">
+				<p class="text-muted text-center">All content copyright Co-Trip © 2014 • All rights reserved.</p>
+			</div>
+		</footer>
 		
 		<!-- Bootstrap core Javascript -->
 		<script type="text/javascript" src="./js/bootstrap.js"></script>

@@ -6,3 +6,18 @@ body {
   display: table;
   position: relative;
 }
+
+#footer {
+  height: 80px;
+  min-height: 80px;
+  border-width: 1px;
+  background-color: rgba(248, 248, 248, 0.9);
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1029;
+}
+
+#footer > div > p {
+  margin-top: 27px;
+}
