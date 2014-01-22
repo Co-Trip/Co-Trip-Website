@@ -1,0 +1,8 @@
+body {
+  /*background-image: url(../img/2.jpg);*/
+  background-size: cover;
+  background-color: rgb(39, 143, 202);
+  background-repeat: no-repeat;
+  display: table;
+  position: relative;
+}
