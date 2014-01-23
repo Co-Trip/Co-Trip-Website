@@ -3,8 +3,14 @@ body {
   background-size: cover;
   background-color: rgb(39, 143, 202);
   background-repeat: no-repeat;
-  display: table;
+  display: block;
   position: relative;
+  height: 100%;
+  min-height: 100%;
+}
+
+html {
+  height: 100%;
 }
 
 #footer {
@@ -12,12 +18,32 @@ body {
   min-height: 80px;
   border-width: 1px;
   background-color: rgba(248, 248, 248, 0.9);
-  position: fixed;
+  position: relative;
   left: 0;
   right: 0;
   z-index: 1029;
+  bottom: 0;
 }
 
 #footer > div > p {
   margin-top: 27px;
+}
+
+.jumbotron {
+  position: static;
+  left: 0;
+  right: 0;
+  max-width: 680px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  height: 100%;
+  min-height: 100%;
+  padding-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -80px;
 }
