@@ -1,28 +1,37 @@
 body {
-  /*background-image: url(../img/2.jpg);*/
+  display: block;
+  position: relative;
+}
+
+html, body {
+  height: 100%;
+}
+
+#background {
+  background-image: url(../img/2.jpg);
+  -webkit-filter: grayscale(80%);
+  z-index: 100;
   background-size: cover;
   background-color: rgb(39, 143, 202);
   background-repeat: no-repeat;
-  display: block;
-  position: relative;
+  width: 100%;
   height: 100%;
-  min-height: 100%;
-}
-
-html {
-  height: 100%;
+  overflow:hidden;
+  position:absolute;
+  left:0px;
+  top:0px;
 }
 
 #footer {
   height: 80px;
   min-height: 80px;
   border-width: 1px;
-  background-color: rgba(248, 248, 248, 0.9);
+  border-top: 1px solid rgb(248, 248, 248);
+  background-color: rgba(248, 248, 248, 0.7);
   position: relative;
   left: 0;
   right: 0;
   z-index: 1029;
-  bottom: 0;
 }
 
 #footer > div > p {
@@ -30,7 +39,7 @@ html {
 }
 
 .jumbotron {
-  position: static;
+  position: relative;
   left: 0;
   right: 0;
   max-width: 680px;
@@ -39,11 +48,11 @@ html {
   margin-right: auto;
 }
 
-.wrapper {
-  height: 100%;
+#main-text {
+  height: auto;
   min-height: 100%;
   padding-bottom: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -80px;
+  margin: 0 auto -80px;
+  z-index: 300;
+  position: relative;
 }
