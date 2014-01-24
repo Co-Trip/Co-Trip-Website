@@ -2,7 +2,6 @@ body {
   display: block;
   position: relative;
 }
-
 html, body {
   height: 100%;
 }
@@ -21,7 +20,6 @@ html, body {
   top:0;
   display: none;
 }
-
 #main {
   height: auto;
   min-height: 100%;
@@ -30,7 +28,16 @@ html, body {
   z-index: 300;
   position: relative;
 }
-
+#main-heading {
+  position: fixed;
+  max-width: 315px;
+  width: 315px;
+  top: 130px;
+  right: 170px;
+}
+#main-heading h1 {
+  color: white;
+}
 #login-panel {
   max-width: 315px;
   width: 315px;
@@ -41,12 +48,10 @@ html, body {
   right: 170px;
   border-radius: 8px;
 }
-
 .panel {
   border-width: 4px;
   background-color: rgba(255, 255, 255, 0.8);
 }
-
 .form-login {
   max-width: 330px;
   padding: 15px;
@@ -90,7 +95,6 @@ html, body {
   margin-left: 10px;
   margin-right: auto;
 }
-
 #footer {
   height: 80px;
   min-height: 80px;
@@ -102,7 +106,6 @@ html, body {
   right: 0;
   z-index: 1029;
 }
-
 #footer > div > p {
   margin-top: 27px;
 }
