@@ -8,7 +8,7 @@ html, body {
 }
 
 .background {
-  -webkit-filter: grayscale(60%);
+  -webkit-filter: grayscale(70%);
   z-index: 100;
   background-size: cover;
   background-color: rgb(39, 143, 202);
@@ -17,19 +17,78 @@ html, body {
   height: 100%;
   overflow:hidden;
   position:absolute;
-  left:0px;
-  top:0px;
+  left:0;
+  top:0;
   display: none;
 }
 
-#background-mask {
-  width: 100%;
-  height: 100%;
-  overflow:hidden;
-  position:absolute;
-  left:0px;
-  top:0px;
-  z-index: 101;
+#main {
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 80px;
+  margin: 0 auto -80px;
+  z-index: 300;
+  position: relative;
+}
+
+#login-panel {
+  max-width: 315px;
+  width: 315px;
+  max-height: 325px;
+  height: 325px;
+  position: fixed;
+  top: 200px;
+  right: 170px;
+  border-radius: 8px;
+}
+
+.panel {
+  border-width: 4px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.form-login {
+  max-width: 330px;
+  padding: 15px;
+  margin: 30px auto;
+}
+.form-login .checkbox {
+  font-weight: normal;
+}
+.form-login .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.form-login .form-control:focus {
+  z-index: 2;
+}
+.form-login input[type="text"] {
+  margin-bottom: 18px;
+}
+.form-login input[type="password"] {
+  margin-bottom: 30px;
+}
+#button-group {
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 15px;
+}
+#button-login, #button-signup {
+  width: 96px;
+  max-width: 96px;
+}
+#button-login {
+  margin-left: auto;
+  margin-right: 10px;
+}
+#button-signup {
+  margin-left: 10px;
+  margin-right: auto;
 }
 
 #footer {
@@ -37,7 +96,7 @@ html, body {
   min-height: 80px;
   border-width: 1px;
   border-top: 1px solid rgb(248, 248, 248);
-  background-color: rgba(248, 248, 248, 0.7);
+  background-color: rgba(255, 255, 255, 0.47);
   position: relative;
   left: 0;
   right: 0;
@@ -46,23 +105,4 @@ html, body {
 
 #footer > div > p {
   margin-top: 27px;
-}
-
-.jumbotron {
-  position: relative;
-  left: 0;
-  right: 0;
-  max-width: 680px;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#main-text {
-  height: auto;
-  min-height: 100%;
-  padding-bottom: 80px;
-  margin: 0 auto -80px;
-  z-index: 300;
-  position: relative;
 }

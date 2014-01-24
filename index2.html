@@ -30,66 +30,30 @@
 			<span class="sr-only">Background Image2</span>
 		</div>
 
-		<canvas id="background-mask">
-			<span class="sr-only">Background Mask</span>
-		</canvas>
-
-		<!-- =====NAVBAR===== -->
-		<div class="navbar-wrapper">
-			<div class="container">
-				<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-					<div class="container">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-							</button>
-							<a class="navbar-brand" href="./index.html">Co-Trip</a>
+		<!-- =====MAIN CONTENT===== -->
+		<div id="main">
+			<div class="panel panel-default" id="login-panel">
+				<div class="panel-body">
+					<form class="form-login" role="form">
+						<input type="text" class="form-control" placeholder="Username" required autofocus>
+						<input type="password" class="form-control" placeholder="Password" required>
+						<label class="checkbox">
+							<input type="checkbox" value="remember-me"> Remember me
+						</label>
+						<div id="button-group">
+							<button class="btn btn-lg btn-primary" type="submit" id="button-login">Log in</button>
+							<a class="btn btn-lg btn-success" href="accounts/register" id="button-signup">Sign up</a>
 						</div>
-
-						<div class="navbar-collapse collapse">
-							<ul class="nav navbar-nav navbar-left">
-								<li class="active"><a href="./index.html">Home</a></li>
-								<li><a href="plan/explore">Explore</a></li>
-								<li><a href="">Help</a></li>
-							</ul>
-
-							<form class="navbar-form navbar-left" role="search">
-					    	<div class="form-group">
-					    		<input type="text" class="form-control" placeholder="Search">
-					    	</div>
-					    	<button type="submit" class="btn btn-default">Search</button>
-					    </form>
-
-					    <ul class="nav navbar-nav navbar-right">
-					    	<a class="btn btn-primary navbar-btn" href="accounts/register">Sign up</a>
-								<a class="btn btn-default navbar-btn" href="accounts/login">Log in</a>
-					    </ul>
-						</div>
-					</div>
+						
+					</form>
 				</div>
-			</div>
-		</div>
-
-		<!-- =====MAIN TEXT===== -->
-		<div id="main-text">
-			<div class="jumbotron">
-				<h1>welcome to Co-Trip</h1>
-			    <p>this is the home page for Co-Trip</p>
-			    {% if user.is_authenticated %}
-			        <p>{{ user.username }}, welcome back. You can now <a href="accounts/logout"> log out</a>.</p>
-			    {% else %}
-			        <p>you can <a href = "accounts/login">log in</a> or <a href = "accounts/register">sign up</a></p>
-			    {% endif %}
 			</div>
 		</div>
 
 		<!-- =====FOOTER===== -->
 		<footer id="footer">
 			<div class="container">
-				<p class="text-muted text-center">All content copyright Co-Trip © 2014 • All rights reserved.</p>
+				<p class="text-center">All content copyright <a href="/">Co-Trip</a> © 2014 • All rights reserved.</p>
 			</div>
 		</footer>
 		
