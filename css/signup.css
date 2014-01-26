@@ -4,6 +4,9 @@ body {
   background-color: #eee;
 }
 
+#button-login, #button-signup {
+  min-width: 74px;
+}
 .form-signup {
   max-width: 600px;
   padding: 15px;
