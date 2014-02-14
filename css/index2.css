@@ -9,6 +9,8 @@ html, body {
 .background {
   -webkit-filter: grayscale(70%);
   z-index: 100;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
   background-color: rgb(39, 143, 202);
   background-repeat: no-repeat;
@@ -76,21 +78,16 @@ html, body {
 .form-signup input {
   margin-bottom: 18px;
 }
-#button-group {
+.button-group {
   text-align: center;
   vertical-align: middle;
   margin-top: 15px;
 }
-#button-login, #button-signup {
+#button-login, 
+#button-signup, 
+#button-login-submit, 
+#button-signup-submit {
   min-width: 96px;
-}
-#button-login {
-  margin-left: auto;
-  margin-right: 10px;
-}
-#button-signup {
-  margin-left: 10px;
-  margin-right: auto;
 }
 #footer {
   height: 80px;

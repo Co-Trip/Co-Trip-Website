@@ -7,7 +7,16 @@ $(document).ready(function($) {
 		num = Math.floor(Math.random() * 12 + 1);
 		jQuery.changeBackgroundImage(num);
 	}, 8000);
-	jQuery.showLoginPanel();
+
+	jQuery.showPanel($('#login'));
+	$('#button-signup').click(function(event) {
+		jQuery.showPanel($('#signup'));
+		jQuery.hidePanel($('#login'));
+	});
+	$('#button-login').click(function(event) {
+		jQuery.showPanel($('#login'));
+		jQuery.hidePanel($('#signup'));
+	});
 });
 
 jQuery.changeBackgroundImage = function(num) {
@@ -24,16 +33,19 @@ jQuery.changeBackgroundImage = function(num) {
 	};
 };
 
-jQuery.showLoginPanel = function() {
-	$('#login').delay(50).show('slow').animate({
-		left: 0,
+jQuery.showPanel = function($panel) {
+	$panel.delay(50).show('slow').animate({
+		left: -20,
 		opacity: 1
-	}, '8000');
+	}, '8000').animate({
+		left: 0
+	}, 'fast');
 };
-
-jQuery.showSignupPanel = function() {
-	$('#signup').delay(50).show('slow').animate({
-		left: 0,
-		opacity: 1
-	}, '8000');
+jQuery.hidePanel = function($panel) {
+	$panel.animate({
+		left: -20,
+	}, 'fast').animate({
+		left: 120,
+		opacity: 0
+	}, '6000').hide('fast');
 };
