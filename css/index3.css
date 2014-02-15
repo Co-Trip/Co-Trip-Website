@@ -27,12 +27,28 @@ footer > div > p {
   min-width: 74px;
 }
 
+.nav > .nav-setting {
+  float: right;
+}
+.nav > .nav-setting > a {
+  color: #555555;
+}
+.nav-tabs > li > a:hover, 
+.nav-tabs > li > a:focus {
+  border-color: #eeeeee #eeeeee #dddddd;
+}
+.nav .open > a, 
+.nav .open > a:hover, 
+.nav .open > a:focus {
+  border-color: #eeeeee #eeeeee #dddddd;
+}
+
 /*
  * Co-Trip Feed
  * --------------------------------------------------
  */
 .CT-feed-item {
-  border-top: 1px solid rgba(238, 238, 238, 0.8);
+  border-bottom: 1px solid rgb(228, 228, 228);
   padding: 15px;
 }
 
