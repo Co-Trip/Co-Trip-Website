@@ -5,31 +5,11 @@
  * @date    2014-02-14 14:27:59
  * @version 1.0
  */
-body {
-  padding-top: 70px;
-}
-footer {
-  height: 80px;
-  min-height: 80px;
-  border-width: 1px;
-  border-top: 1px solid rgb(248, 248, 248);
-  background-color: rgba(255, 255, 255, 0.47);
-  position: relative;
-  left: 0;
-  right: 0;
-  z-index: 1029;
-}
-footer > div > p {
-  margin-top: 27px;
-}
 
-.btn {
-  min-width: 74px;
-}
-
-.nav > .nav-setting {
-  float: right;
-}
+/*
+ * Co-Trip Navtab
+ * --------------------------------------------------
+ */
 .nav > .nav-setting > a {
   color: #555555;
 }
@@ -50,6 +30,14 @@ footer > div > p {
 .CT-feed-item {
   border-bottom: 1px solid rgb(228, 228, 228);
   padding: 15px;
+}
+
+/*
+ * Co-Trip Sidebar
+ * --------------------------------------------------
+ */
+#sidebar {
+  padding-top: 50px;
 }
 
 /*

@@ -15,10 +15,11 @@
     <![endif]-->
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="external/Bootstrap/css/bootstrap.css">
 
     <!-- Custom styles -->
     <link rel="stylesheet" type="text/css" href="css/index3.css">
+    <link rel="stylesheet" type="text/css" href="css/Co-Trip.css">
   </head>
 
   <body>
@@ -50,13 +51,43 @@
           </form>
 
           <ul class="nav navbar-nav navbar-right">
-            <a class="btn btn-primary navbar-btn" href="accounts/register">Sign up</a>
-            <a class="btn btn-default navbar-btn" href="accounts/login">Log in</a>
+            <li class="dropdown">
+              <a class="CT-user-profile dropdown-toggle" href="people/zhangrui" data-toggle="dropdown">
+                <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="avatar">
+                <span class="name">Zhang Rui</span>
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="people/zhangrui">
+                    <span class="glyphicon glyphicon-user"></span> My Account
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="messages">
+                    <span class="glyphicon glyphicon-envelope"></span> Messages
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="setting">
+                    <span class="glyphicon glyphicon-cog"></span> Setting
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="logout">
+                    <span class="glyphicon glyphicon-off"></span> Log out
+                  </a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
     </div>
-
+    
     <!-- =====MAIN CONTENT===== -->
     <main class="container">
       <div class="row row-offcanvas row-offcanvas-right">
@@ -75,7 +106,7 @@
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#">Profile</a></li>
               <li><a href="#">Messages</a></li>
-              <li class="nav-setting dropdown">
+              <li class="nav-setting dropdown pull-right">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                   <span class="glyphicon glyphicon-cog"></span> Setting <span class="caret"></span>
                 </a>
@@ -93,7 +124,7 @@
             <div class="CT-feed-item col-xs-12" data-id="0">
               <div class="CT-avatar col-xs-3 col-sm-2">
                 <a href="people/zhangrui" class="thumbnail">
-                  <img src="imgs/avatar/zr.jpg" alt="Zhang Rui">
+                  <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="avatar">
                 </a>
               </div>
               <div class="CT-feed-main col-xs-9 col-sm-10">
@@ -215,8 +246,8 @@
     </footer>
     
     <!-- Bootstrap core Javascript -->
-    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="external/jQuery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="external/Bootstrap/bootstrap.js"></script>
     <script type="text/javascript" src="js/index3.js"></script>
   </body>
 </html>
