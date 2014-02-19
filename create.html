@@ -8,7 +8,7 @@
     <meta name="description" content="Travel">
     <meta name="keywords" content="Travel, Co-Trip, Coopertaion, Online">
 
-    <title>Co-Trip</title>
+    <title>Create your plan | Co-Trip</title>
 
     <!--[if ls IE 10]>
       <h1>Are you kidding? You are still using IE?</h1>
@@ -89,7 +89,209 @@
     
     <!-- =====MAIN CONTENT===== -->
     <main class="container">
-      
+      <form action="" role="form" id="plan-form" method="POST">
+        <div class="form-group" id="plan-title">
+          <label for="id-title">Title</label>
+          <input type="text" class="form-control" id="id-title" name="title" placeholder="Your plan title" required autofocus>
+        </div><!-- /plan title -->
+        
+        <div class="form-group" id="plan-home-city">
+          <label for="id-home-city">Home city</label>
+          <select class="form-control" name="home_city" id="id-home-city" form="plan-form" required>
+            <option value="" selected="select">Your home city</option>
+            <option value="0">Beijing</option>
+            <option value="1">Shanghai</option>
+            <option value="2">Guangzhou</option>
+            <option value="3">Shenzhen</option>
+          </select>
+        </div><!-- /plan home city -->
+
+        <div class="form-group" id="plan-destination-city">
+          <label for="id-destination-city">Destination city</label>
+          <select class="form-control" id="id-destination-city" name="destination_city" form="plan-form" required multiple>
+            <option value="" selected="select">Your destination city</option>
+            <option value="0">Beijing</option>
+            <option value="1">Shanghai</option>
+            <option value="2">Guangzhou</option>
+            <option value="3">Shenzhen</option>
+            <option value="4">Wuhan</option>
+            <option value="5">Taiwan</option>
+          </select>
+          <p class="help-block"> Hold down "Control", or "Command" on a Mac, to select more than one.</p>
+        </div><!-- /plan destination city -->
+        
+        <div class="form-group" id="plan-leaving-date">
+          <label for="id-leaving-data-month">Leaving data</label>
+          <select class="form-control" id="id-leaving-data-month" name="leaving_date_month" form="plan-form" required>
+            <option value="0" selected="select">Month</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+          <select class="form-control" id="id-leaving-data-day" name="leaving_date_day" form="plan-form" required>
+            <option value="0" selected="select">Day</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+          </select>
+          <select class="form-control" id="id-leaving-data-year" name="leaving_date_year" form="plan-form" required>
+            <option value="0" selected="select">Year</option>
+            <option value="1">2014</option>
+            <option value="2">2015</option>
+            <option value="3">2016</option>
+            <option value="4">2017</option>
+          </select>
+        </div><!-- /plan leaving date -->
+        
+        <div class="form-group" id="plan-leaving-transpotation">
+          <label for="id-leaving-transpotation">Leaving transpotation</label>
+          <select class="form-control" name="leaving_transpotation" id="id-leaving-transpotation" form="plan-form" required>
+            <option value="" selected="select">Leaving transpotation</option>
+            <option value="plane">Plane</option>
+            <option value="train">Train</option>
+            <option value="bus">Bus</option>
+            <option value="other">Other</option>
+          </select>
+        </div><!-- /plan leaving transpotation -->
+
+        <div class="form-group" id="plan-return-date">
+          <label for="id-return-data-month">Return data</label>
+          <select class="form-control" id="id-return-data-month" name="return_date_month" form="plan-form" required>
+            <option value="0" selected="select">Month</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+          <select class="form-control" id="id-return-data-day" name="return_date_day" form="plan-form" required>
+            <option value="0" selected="select">Day</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+          </select>
+          <select class="form-control" id="id-return-data-year" name="return_date_year" form="plan-form" required>
+            <option value="0" selected="select">Year</option>
+            <option value="1">2014</option>
+            <option value="2">2015</option>
+            <option value="3">2016</option>
+            <option value="4">2017</option>
+          </select>
+        </div><!-- /plan return date -->
+
+        <div class="form-group" id="plan-return-transpotation">
+          <label for="id-return-transpotation">Return transpotation</label>
+          <select class="form-control" name="return_transpotation" id="id-return-transpotation" form="plan-form" required>
+            <option value="" selected="select">Return transpotation</option>
+            <option value="plane">Plane</option>
+            <option value="train">Train</option>
+            <option value="bus">Bus</option>
+            <option value="other">Other</option>
+          </select>
+        </div><!-- /plan return transpotation -->
+        
+        <div class="form-group" id="plan-participants-number">
+          <label  class="sr-only" for="id-participants-number">Participants number</label>
+          <input type="hidden" class="form-control" id="id-participants-number" name="participants_number" placeholder="Participants number" value="1">
+        </div><!-- /plan participants number -->
+
+        <div class="form-group" id="plan-participants">
+          <label for="id-participants">Participants</label>
+          <select class="form-control" name="participants" id="id-participants" form="plan-form" multiple>
+            <option value="1">qsz</option>
+            <option value="2">hst</option>
+            <option value="3">zr2</option>
+            <option value="4">cl</option>
+            <option value="5">ck</option>
+          </select>
+        </div><!-- /plan participants -->
+
+        <div class="checkbox" id="plan-participants-can-edit">
+          <label for="id-participants-can-edit">
+            <input type="checkbox" id="id-participants-can-edit" name="participants_can_edit"> Participants can edit
+          </label>
+        </div><!-- /plan participants can edit -->
+
+        <div class="checkbox" id="plan-is-public">
+          <label for="id-is-public">
+            <input type="checkbox" id="id-is-public" name="is_public"> Is public
+          </label>
+        </div><!-- /plan is public -->
+        
+        <button type="submit" class="btn btn-default">Create</button>
+        <input type="reset" class="btn btn-danger">
+        
+      </form>
     </main>
 
     <!-- =====FOOTER===== -->
