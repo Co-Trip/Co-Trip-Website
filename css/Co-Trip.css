@@ -16,9 +16,6 @@ body {
  * Co-Trip Navbar
  * --------------------------------------------------
  */
-.avatar {
-  border-radius: 4px;
-}
 .navbar-nav a.CT-user-profile > .avatar {
   max-width: 28px;
   height: auto;

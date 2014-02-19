@@ -17,6 +17,9 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" type="text/css" href="external/Bootstrap/css/bootstrap.css">
 
+    <!-- Datetimepicker core CSS -->
+    <link rel="stylesheet" type="text/css" href="external/datetimepicker/css/bootstrap-datetimepicker.css">
+
     <!-- Custom styles -->
     <link rel="stylesheet" type="text/css" href="css/create.css">
     <link rel="stylesheet" type="text/css" href="css/Co-Trip.css">
@@ -89,7 +92,7 @@
     
     <!-- =====MAIN CONTENT===== -->
     <main class="container">
-      <form action="" role="form" id="plan-form" method="POST">
+      <form class="" action="" role="form" id="plan-form" method="POST">
         <div class="form-group" id="plan-title">
           <label for="id-title">Title</label>
           <input type="text" class="form-control" id="id-title" name="title" placeholder="Your plan title" required autofocus>
@@ -119,64 +122,15 @@
           </select>
           <p class="help-block"> Hold down "Control", or "Command" on a Mac, to select more than one.</p>
         </div><!-- /plan destination city -->
-        
+
         <div class="form-group" id="plan-leaving-date">
-          <label for="id-leaving-data-month">Leaving data</label>
-          <select class="form-control" id="id-leaving-data-month" name="leaving_date_month" form="plan-form" required>
-            <option value="0" selected="select">Month</option>
-            <option value="1">January</option>
-            <option value="2">February</option>
-            <option value="3">March</option>
-            <option value="4">April</option>
-            <option value="5">May</option>
-            <option value="6">June</option>
-            <option value="7">July</option>
-            <option value="8">August</option>
-            <option value="9">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
-          </select>
-          <select class="form-control" id="id-leaving-data-day" name="leaving_date_day" form="plan-form" required>
-            <option value="0" selected="select">Day</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-            <option value="25">25</option>
-            <option value="26">26</option>
-            <option value="27">27</option>
-            <option value="28">28</option>
-            <option value="29">29</option>
-            <option value="30">30</option>
-          </select>
-          <select class="form-control" id="id-leaving-data-year" name="leaving_date_year" form="plan-form" required>
-            <option value="0" selected="select">Year</option>
-            <option value="1">2014</option>
-            <option value="2">2015</option>
-            <option value="3">2016</option>
-            <option value="4">2017</option>
-          </select>
+          <label for="id-leaving-date">Leaving date</label>
+          <div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="id-leaving-date" data-link-format="yyyy-mm-dd">
+            <input class="form-control" size="16" type="text" value="" readonly>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+          </div>
+          <input type="hidden" id="id-leaving-date" name="leaving-date" value="" form="plan-form">
         </div><!-- /plan leaving date -->
         
         <div class="form-group" id="plan-leaving-transpotation">
@@ -191,62 +145,13 @@
         </div><!-- /plan leaving transpotation -->
 
         <div class="form-group" id="plan-return-date">
-          <label for="id-return-data-month">Return data</label>
-          <select class="form-control" id="id-return-data-month" name="return_date_month" form="plan-form" required>
-            <option value="0" selected="select">Month</option>
-            <option value="1">January</option>
-            <option value="2">February</option>
-            <option value="3">March</option>
-            <option value="4">April</option>
-            <option value="5">May</option>
-            <option value="6">June</option>
-            <option value="7">July</option>
-            <option value="8">August</option>
-            <option value="9">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
-          </select>
-          <select class="form-control" id="id-return-data-day" name="return_date_day" form="plan-form" required>
-            <option value="0" selected="select">Day</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-            <option value="25">25</option>
-            <option value="26">26</option>
-            <option value="27">27</option>
-            <option value="28">28</option>
-            <option value="29">29</option>
-            <option value="30">30</option>
-          </select>
-          <select class="form-control" id="id-return-data-year" name="return_date_year" form="plan-form" required>
-            <option value="0" selected="select">Year</option>
-            <option value="1">2014</option>
-            <option value="2">2015</option>
-            <option value="3">2016</option>
-            <option value="4">2017</option>
-          </select>
+          <label for="id-return-date">Return data</label>
+          <div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="id-return-date" data-link-format="yyyy-mm-dd">
+            <input class="form-control" size="16" type="text" value="" readonly>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+          </div>
+          <input type="hidden" id="id-return-date" name="return-date" value="" form="plan-form">
         </div><!-- /plan return date -->
 
         <div class="form-group" id="plan-return-transpotation">
@@ -274,6 +179,7 @@
             <option value="4">cl</option>
             <option value="5">ck</option>
           </select>
+          <p class="help-block"> Hold down "Control", or "Command" on a Mac, to select more than one.</p>
         </div><!-- /plan participants -->
 
         <div class="checkbox" id="plan-participants-can-edit">
@@ -300,9 +206,28 @@
         <p class="text-center">All content copyright <a href="/">Co-Trip</a> © 2014 • All rights reserved.</p>
       </div>
     </footer>
-    
-    <!-- Bootstrap core Javascript -->
+
+    <!-- jQuery core Javascript -->
     <script type="text/javascript" src="external/jQuery/jquery-1.10.2.js"></script>
+
+    <!-- Bootstrap core Javascript -->
     <script type="text/javascript" src="external/Bootstrap/js/bootstrap.js"></script>
+
+    <!-- Datetimepicker core Javascript -->
+    <script type="text/javascript" src="external/datetimepicker/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="external/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <script type="text/javascript">
+      $('.form_date').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+      });
+    </script>
+
   </body>
 </html>
