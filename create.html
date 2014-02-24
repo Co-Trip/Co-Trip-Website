@@ -92,142 +92,159 @@
     
     <!-- =====MAIN CONTENT===== -->
     <main class="container">
-      <form class="form-horizontal" action="" role="form" id="plan-form" method="POST">
-        <div class="form-group" id="plan-title">
-          <label for="id-title" class="col-sm-2 control-label">Title</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="id-title" name="title" placeholder="Your plan title" required autofocus>
-          </div>
-        </div><!-- /plan title -->
-        
-        <div class="form-group" id="plan-home-city">
-          <label for="id-home-city" class="col-sm-2 control-label">Home city</label>
-          <div class="col-sm-10">
-            <select class="form-control" name="home_city" id="id-home-city" form="plan-form" required>
-              <option value="" selected="select">Your home city</option>
-              <option value="0">Beijing</option>
-              <option value="1">Shanghai</option>
-              <option value="2">Guangzhou</option>
-              <option value="3">Shenzhen</option>
-            </select>
-          </div>
-        </div><!-- /plan home city -->
-
-        <div class="form-group" id="plan-destination-city">
-          <label for="id-destination-city" class="col-sm-2 control-label">Destination city</label>
-          <div class="col-sm-10">
-            <select class="form-control" id="id-destination-city" name="destination_city" form="plan-form" required multiple>
-              <option value="" selected="select">Your destination city</option>
-              <option value="0">Beijing</option>
-              <option value="1">Shanghai</option>
-              <option value="2">Guangzhou</option>
-              <option value="3">Shenzhen</option>
-              <option value="4">Wuhan</option>
-              <option value="5">Taiwan</option>
-            </select>
-            <p class="help-block"> Hold down "Control", or "Command" on a Mac, to select more than one.</p>
-          </div>
-        </div><!-- /plan destination city -->
-
-        <div class="form-group" id="plan-leaving-date">
-          <label for="id-leaving-date" class="col-sm-2 control-label">Leaving date</label>
-          <div class="col-sm-10">
-            <div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="id-leaving-date" data-link-format="yyyy-mm-dd">
-              <input class="form-control" size="16" type="text" value="" readonly>
-              <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-              <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+      <div class="row">
+        <form class="form-horizontal col-xs-12 col-sm-9" action="" role="form" id="plan-form" method="POST">
+          <div class="form-group" id="plan-title">
+            <label for="id-title" class="col-sm-2 control-label">Title</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="id-title" name="title" placeholder="Your plan title" required autofocus>
             </div>
-            <input type="hidden" id="id-leaving-date" name="leaving-date" value="" form="plan-form">
-          </div>
-        </div><!-- /plan leaving date -->
-        
-        <div class="form-group" id="plan-leaving-transpotation">
-          <label for="id-leaving-transpotation" class="col-sm-2 control-label">Leaving transpotation</label>
-          <div class="col-sm-10">
-            <select class="form-control" name="leaving_transpotation" id="id-leaving-transpotation" form="plan-form" required>
-              <option value="" selected="select">Leaving transpotation</option>
-              <option value="plane">Plane</option>
-              <option value="train">Train</option>
-              <option value="bus">Bus</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-        </div><!-- /plan leaving transpotation -->
-
-        <div class="form-group" id="plan-return-date">
-          <label for="id-return-date" class="col-sm-2 control-label">Return data</label>
-          <div class="col-sm-10">
-            <div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="id-return-date" data-link-format="yyyy-mm-dd">
-              <input class="form-control" size="16" type="text" value="" readonly>
-              <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-              <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+          </div><!-- /plan title -->
+          
+          <div class="form-group" id="plan-home-city">
+            <label for="id-home-city" class="col-sm-2 control-label">Home city</label>
+            <div class="col-sm-10">
+              <select class="form-control" name="home_city" id="id-home-city" form="plan-form" required>
+                <option value="" selected="select">Your home city</option>
+                <option value="0">Beijing</option>
+                <option value="1">Shanghai</option>
+                <option value="2">Guangzhou</option>
+                <option value="3">Shenzhen</option>
+              </select>
             </div>
-            <input type="hidden" id="id-return-date" name="return-date" value="" form="plan-form">
-          </div>
-        </div><!-- /plan return date -->
+          </div><!-- /plan home city -->
 
-        <div class="form-group" id="plan-return-transpotation">
-          <label for="id-return-transpotation" class="col-sm-2 control-label">Return transpotation</label>
-          <div class="col-sm-10">
-            <select class="form-control" name="return_transpotation" id="id-return-transpotation" form="plan-form" required>
-              <option value="" selected="select">Return transpotation</option>
-              <option value="plane">Plane</option>
-              <option value="train">Train</option>
-              <option value="bus">Bus</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-        </div><!-- /plan return transpotation -->
-        
-        <div class="form-group hide" id="plan-participants-number">
-          <label  class="sr-only col-sm-2 control-label" for="id-participants-number">Participants number</label>
-          <div class="col-sm-10">
-            <input type="hidden" class="form-control" id="id-participants-number" name="participants_number" placeholder="Participants number" value="1">
-          </div>
-        </div><!-- /plan participants number -->
-
-        <div class="form-group" id="plan-participants">
-          <label for="id-participants" class="col-sm-2 control-label">Participants</label>
-          <div class="col-sm-10">
-            <select class="form-control" name="participants" id="id-participants" form="plan-form" multiple>
-              <option value="1">qsz</option>
-              <option value="2">hst</option>
-              <option value="3">zr2</option>
-              <option value="4">cl</option>
-              <option value="5">ck</option>
-            </select>
-            <p class="help-block"> Hold down "Control", or "Command" on a Mac, to select more than one.</p>
-          </div>
-        </div><!-- /plan participants -->
-
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <div class="checkbox" id="plan-participants-can-edit">
-              <label for="id-participants-can-edit">
-                <input type="checkbox" id="id-participants-can-edit" name="participants_can_edit"> Participants can edit
-              </label>
+          <div class="form-group" id="plan-destination-city">
+            <label for="id-destination-city" class="col-sm-2 control-label">Destination city</label>
+            <div class="col-sm-10">
+              <select class="form-control" id="id-destination-city" name="destination_city" form="plan-form" required multiple>
+                <option value="" selected="select">Your destination city</option>
+                <option value="0">Beijing</option>
+                <option value="1">Shanghai</option>
+                <option value="2">Guangzhou</option>
+                <option value="3">Shenzhen</option>
+                <option value="4">Wuhan</option>
+                <option value="5">Taiwan</option>
+              </select>
+              <p class="help-block"> Hold down "Control", or "Command" on a Mac, to select more than one.</p>
             </div>
-          </div>
-        </div><!-- /plan participants can edit -->
-        
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <div class="checkbox" id="plan-is-public">
-              <label for="id-is-public">
-                <input type="checkbox" id="id-is-public" name="is_public"> Is public
-              </label>
+          </div><!-- /plan destination city -->
+
+          <div class="form-group" id="plan-leaving-date">
+            <label for="id-leaving-date" class="col-sm-2 control-label">Leaving date</label>
+            <div class="col-sm-10">
+              <div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="id-leaving-date" data-link-format="yyyy-mm-dd">
+                <input class="form-control" size="16" type="text" value="" readonly>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+              </div>
+              <input type="hidden" id="id-leaving-date" name="leaving-date" value="" form="plan-form">
             </div>
+          </div><!-- /plan leaving date -->
+          
+          <div class="form-group" id="plan-leaving-transpotation">
+            <label for="id-leaving-transpotation" class="col-sm-2 control-label">Leaving transpotation</label>
+            <div class="col-sm-10">
+              <select class="form-control" name="leaving_transpotation" id="id-leaving-transpotation" form="plan-form" required>
+                <option value="" selected="select">Leaving transpotation</option>
+                <option value="plane">Plane</option>
+                <option value="train">Train</option>
+                <option value="bus">Bus</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div><!-- /plan leaving transpotation -->
+
+          <div class="form-group" id="plan-return-date">
+            <label for="id-return-date" class="col-sm-2 control-label">Return data</label>
+            <div class="col-sm-10">
+              <div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="id-return-date" data-link-format="yyyy-mm-dd">
+                <input class="form-control" size="16" type="text" value="" readonly>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+              </div>
+              <input type="hidden" id="id-return-date" name="return-date" value="" form="plan-form">
+            </div>
+          </div><!-- /plan return date -->
+
+          <div class="form-group" id="plan-return-transpotation">
+            <label for="id-return-transpotation" class="col-sm-2 control-label">Return transpotation</label>
+            <div class="col-sm-10">
+              <select class="form-control" name="return_transpotation" id="id-return-transpotation" form="plan-form" required>
+                <option value="" selected="select">Return transpotation</option>
+                <option value="plane">Plane</option>
+                <option value="train">Train</option>
+                <option value="bus">Bus</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div><!-- /plan return transpotation -->
+          
+          <div class="form-group hide" id="plan-participants-number">
+            <label  class="sr-only col-sm-2 control-label" for="id-participants-number">Participants number</label>
+            <div class="col-sm-10">
+              <input type="hidden" class="form-control" id="id-participants-number" name="participants_number" placeholder="Participants number" value="1">
+            </div>
+          </div><!-- /plan participants number -->
+
+          <div class="form-group" id="plan-participants">
+            <label for="id-participants" class="col-sm-2 control-label">Participants</label>
+            <div class="col-sm-10">
+              <select class="form-control" name="participants" id="id-participants" form="plan-form" multiple>
+                <option value="1">qsz</option>
+                <option value="2">hst</option>
+                <option value="3">zr2</option>
+                <option value="4">cl</option>
+                <option value="5">ck</option>
+              </select>
+              <p class="help-block"> Hold down "Control", or "Command" on a Mac, to select more than one.</p>
+            </div>
+          </div><!-- /plan participants -->
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox" id="plan-participants-can-edit">
+                <label for="id-participants-can-edit">
+                  <input type="checkbox" id="id-participants-can-edit" name="participants_can_edit"> Participants can edit
+                </label>
+              </div>
+            </div>
+          </div><!-- /plan participants can edit -->
+          
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox" id="plan-is-public">
+                <label for="id-is-public">
+                  <input type="checkbox" id="id-is-public" name="is_public"> Is public
+                </label>
+              </div>
+            </div>
+          </div><!-- /plan is public -->
+          
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Create</button>
+              <input type="reset" class="btn btn-danger">
+            </div>
+          </div><!-- /form button -->
+          
+        </form>
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+          <div class="list-group">
+            <a href="#" class="list-group-item active">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
           </div>
-        </div><!-- /plan is public -->
-        
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">Create</button>
-            <input type="reset" class="btn btn-danger">
-          </div>
-        </div>
-        
-      </form>
+        </div><!--/span-->
+      </div>
+  
     </main>
 
     <!-- =====FOOTER===== -->
