@@ -49,8 +49,13 @@
             </div>
             <input type="submit" class="btn btn-default" value="Search">
           </form>
-
+          
           <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/notifications" class="CT-navbar-notification-indicator" data-container="body" data-toggle="tooltip" data-placement="bottom" title="You have no unread notifications." data-original-title="Tooltip on bottom">
+                <span class="mail-status notification-unread glyphicon glyphicon-record"></span>
+              </a>
+            </li>
             <li class="dropdown">
               <a class="CT-user-profile dropdown-toggle" href="#profile" data-toggle="dropdown">
                 <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="avatar">
@@ -200,7 +205,6 @@
             <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
           </div>
         </div>
-
         <hr class="featurette-divider">
 
         <!-- /END THE FEATURETTES -->
@@ -224,5 +228,8 @@
 
     <!-- Custom Javascript -->
 		<script type="text/javascript" src="js/index2.1.js"></script>
+    <script type="text/javascript">
+      $('.CT-navbar-notification-indicator').tooltip();
+    </script>
 	</body>
 </html>
