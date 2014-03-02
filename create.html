@@ -20,6 +20,9 @@
     <!-- Datetimepicker core CSS -->
     <link rel="stylesheet" type="text/css" href="external/datetimepicker/css/bootstrap-datetimepicker.css">
 
+    <!-- Form Validator core CSS -->
+    <link rel="stylesheet" type="text/css" href="external/bootstrapvalidator/css/bootstrapValidator.css"/>
+
     <!-- Custom styles -->
     <link rel="stylesheet" type="text/css" href="css/create.css">
     <link rel="stylesheet" type="text/css" href="css/Co-Trip.css">
@@ -98,11 +101,12 @@
     <!-- =====MAIN CONTENT===== -->
     <main class="container">
       <div class="row">
-        <form class="form-horizontal col-xs-12 col-sm-9" action="" role="form" id="plan-form" method="POST">
+        <form class="form-horizontal col-xs-12 col-sm-9 bootstrap-validator-form" action="" role="form" id="plan-form" method="POST" novalidate="novalidate">
+          <legend>Create Your Plan</legend>
           <div class="form-group" id="plan-title">
             <label for="id-title" class="col-sm-2 control-label">Title</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="id-title" name="title" placeholder="Your plan title" required autofocus>
+              <input type="text" class="form-control" id="id-title" name="title" placeholder="Your plan title" required>
             </div>
           </div><!-- /plan title -->
           
@@ -110,7 +114,7 @@
             <label for="id-home-city" class="col-sm-2 control-label">Home city</label>
             <div class="col-sm-10">
               <select class="form-control" name="home_city" id="id-home-city" form="plan-form" required>
-                <option value="" selected="select">Your home city</option>
+                <option value="" selected="select">-- Select your home city --</option>
                 <option value="0">Beijing</option>
                 <option value="1">Shanghai</option>
                 <option value="2">Guangzhou</option>
@@ -123,7 +127,6 @@
             <label for="id-destination-city" class="col-sm-2 control-label">Destination city</label>
             <div class="col-sm-10">
               <select class="form-control" id="id-destination-city" name="destination_city" form="plan-form" required multiple>
-                <option value="" selected="select">Your destination city</option>
                 <option value="0">Beijing</option>
                 <option value="1">Shanghai</option>
                 <option value="2">Guangzhou</option>
@@ -143,22 +146,22 @@
                 <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
                 <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
               </div>
-              <input type="hidden" id="id-leaving-date" name="leaving-date" value="" form="plan-form">
+              <input type="hidden" id="id-leaving-date" name="leaving_date" value="" form="plan-form">
             </div>
           </div><!-- /plan leaving date -->
           
-          <div class="form-group" id="plan-leaving-transpotation">
-            <label for="id-leaving-transpotation" class="col-sm-2 control-label">Leaving transpotation</label>
+          <div class="form-group" id="plan-leaving-transportation">
+            <label for="id-leaving-transportation" class="col-sm-2 control-label">Leaving transportation</label>
             <div class="col-sm-10">
-              <select class="form-control" name="leaving_transpotation" id="id-leaving-transpotation" form="plan-form" required>
-                <option value="" selected="select">Leaving transpotation</option>
+              <select class="form-control" name="leaving_transportation" id="id-leaving-transportation" form="plan-form" required>
+                <option value="" selected="select">-- Select your leaving transportation --</option>
                 <option value="plane">Plane</option>
                 <option value="train">Train</option>
                 <option value="bus">Bus</option>
                 <option value="other">Other</option>
               </select>
             </div>
-          </div><!-- /plan leaving transpotation -->
+          </div><!-- /plan leaving transportation -->
 
           <div class="form-group" id="plan-return-date">
             <label for="id-return-date" class="col-sm-2 control-label">Return data</label>
@@ -168,22 +171,22 @@
                 <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
                 <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
               </div>
-              <input type="hidden" id="id-return-date" name="return-date" value="" form="plan-form">
+              <input type="hidden" id="id-return-date" name="return_date" value="" form="plan-form">
             </div>
           </div><!-- /plan return date -->
 
-          <div class="form-group" id="plan-return-transpotation">
-            <label for="id-return-transpotation" class="col-sm-2 control-label">Return transpotation</label>
+          <div class="form-group" id="plan-return-transportation">
+            <label for="id-return-transportation" class="col-sm-2 control-label">Return transportation</label>
             <div class="col-sm-10">
-              <select class="form-control" name="return_transpotation" id="id-return-transpotation" form="plan-form" required>
-                <option value="" selected="select">Return transpotation</option>
+              <select class="form-control" name="return_transportation" id="id-return-transportation" form="plan-form" required>
+                <option value="" selected="select">-- Select your return transportation --</option>
                 <option value="plane">Plane</option>
                 <option value="train">Train</option>
                 <option value="bus">Bus</option>
                 <option value="other">Other</option>
               </select>
             </div>
-          </div><!-- /plan return transpotation -->
+          </div><!-- /plan return transportation -->
           
           <div class="form-group hide" id="plan-participants-number">
             <label  class="sr-only col-sm-2 control-label" for="id-participants-number">Participants number</label>
@@ -228,7 +231,7 @@
           
           <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-              <button type="submit" class="btn btn-default">Create</button>
+              <button type="submit" class="btn btn-default" id="plan-submit-button">Create</button>
               <input type="reset" class="btn btn-danger">
             </div>
           </div><!-- /form button -->
@@ -249,7 +252,7 @@
           </div>
         </div><!--/span-->
       </div>
-      
+
       <!-- =====FOOTER===== -->
       <footer id="footer">
         <div class="container">
@@ -267,18 +270,11 @@
     <!-- Datetimepicker core Javascript -->
     <script type="text/javascript" src="external/datetimepicker/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
     <script type="text/javascript" src="external/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
-    <script type="text/javascript">
-      $('.form_date').datetimepicker({
-        language:  'zh-CN',
-        weekStart: 1,
-        todayBtn:  1,
-        autoclose: 1,
-        todayHighlight: 1,
-        startView: 2,
-        minView: 2,
-        forceParse: 0
-      });
-    </script>
 
+    <!-- Form Validator core CSS -->
+    <script type="text/javascript" src="external/bootstrapvalidator/js/bootstrapValidator.js"></script>
+
+    <!-- Custom Javascript -->
+    <script type="text/javascript" src="js/create.js"></script>
   </body>
 </html>
