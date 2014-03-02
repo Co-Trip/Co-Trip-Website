@@ -1,3 +1,10 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Tom Hu (h1994st@gmail.com)
+ * @date    2014-03-02 20:51:30
+ * @version 1.0
+ */
 body {
   display: block;
   position: relative;
@@ -6,9 +13,13 @@ html, body {
   height: 100%;
 }
 
+/*
+ * Co-Trip Index Background
+ * --------------------------------------------------
+ */
 .background {
   -webkit-filter: grayscale(70%);
-  z-index: 100;
+  z-index: 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -22,12 +33,17 @@ html, body {
   top:0;
   display: none;
 }
+
+/*
+ * Co-Trip Index Main
+ * --------------------------------------------------
+ */
 #main {
-  height: auto;
+  height: 100%;
   min-height: 100%;
   padding: 0 0 80px 0;
-  margin: 0 170px -80px auto;
-  z-index: 300;
+  margin: -20px 170px -80px auto;
+  z-index: 10;
   position: relative;
   width: 315px;
 }
@@ -89,17 +105,25 @@ html, body {
 #button-signup-submit {
   min-width: 96px;
 }
-#footer {
-  height: 80px;
-  min-height: 80px;
-  border-width: 1px;
-  border-top: 1px solid rgb(248, 248, 248);
-  background-color: rgba(255, 255, 255, 0.47);
-  position: relative;
+
+/*
+ * Co-Trip Index Left Side Menu
+ * --------------------------------------------------
+ */
+.left-side-menu {
+  position: fixed;
+  top: 0;
   left: 0;
-  right: 0;
-  z-index: 1029;
+  width: 70px;
+  background-color: #ffffff;
+  height: 100%;
 }
-#footer > div > p {
-  margin-top: 27px;
+
+/*
+ * Co-Trip Index Footer
+ * --------------------------------------------------
+ */
+footer {
+  background-color: rgba(255, 255, 255, 0.47);
+  z-index: 1029;
 }
