@@ -41,6 +41,16 @@ $('.form_date').datetimepicker({
     startDate: new Date().format('yyyy-MM-dd')
 });
 
+$('#plan-form').submit(function() {
+    alert('submit');
+    sessionStorage.setItem('planForm', $(this).html());
+});
+
+if(sessionStorage.getItem('planForm')) {
+    $('#plan-form').html(sessionStorage.getItem('planForm'));
+    sessionStorage.removeItem('input');
+}
+
 /*
  * Form Validator
  * --------------------------------------------------
