@@ -107,9 +107,9 @@
           </div><!--/alert banner-->
           <div>
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Messages</a></li>
+              <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+              <li><a href="#profile" data-toggle="tab">Profile</a></li>
+              <li><a href="#messages" data-toggle="tab">Messages</a></li>
               <li class="nav-setting dropdown pull-right">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                   <span class="glyphicon glyphicon-cog"></span> Setting <span class="caret"></span>
@@ -123,107 +123,118 @@
                 </ul>
               </li><!--/setting-->
             </ul>
-          </div><!-- /nav-tabs -->
-          <div class="row">
-            <div class="CT-feed-item col-xs-12" data-fid="0">
-              <div class="CT-avatar col-xs-3 col-sm-2">
-                <a href="people/zhangrui" class="thumbnail">
-                  <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="avatar">
-                </a>
-              </div>
-              <div class="CT-feed-main col-xs-9 col-sm-10">
-                <div class="CT-feed-main-content">
-                  <h4><a href="travel/0001">张睿东莞游</a></h4>
-                  <div class="CT-feed-summary">
-                    哈哈哈哈哈哈！！
-                    今天去东莞耍～买了台macbook！听说要扫黄了，还好我跑得早！！！！机智如我
-                    天佑东莞
+          </div><!-- /.nav-tabs -->
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="home">
+              <div class="row">
+                <div class="CT-feed-item col-xs-12" data-fid="0">
+                  <div class="CT-avatar col-xs-3 col-sm-2">
+                    <a href="people/zhangrui" class="thumbnail">
+                      <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="avatar">
+                    </a>
                   </div>
-                </div>
-              </div>
-            </div><!--/feed item-->
-            <div class="CT-feed-item col-xs-12" data-fid="1">
-              <div class="CT-avatar col-xs-3 col-sm-2">
-                <a href="people/zhangrui" class="thumbnail">
-                  <img src="imgs/avatar/zr.jpg" alt="Zhang Rui">
-                </a>
-              </div>
-              <div class="CT-feed-main col-xs-9 col-sm-10">
-                <div class="CT-feed-main-content">
-                  <h4><a href="travel/0001">张睿东莞游</a></h4>
-                  <div class="CT-feed-summary">
-                    哈哈哈哈哈哈！！
-                    今天去东莞耍～买了台macbook
+                  <div class="CT-feed-main col-xs-9 col-sm-10">
+                    <div class="CT-feed-main-content">
+                      <h4><a href="travel/0001">张睿东莞游</a></h4>
+                      <div class="CT-feed-summary">
+                        哈哈哈哈哈哈！！
+                        今天去东莞耍～买了台macbook！听说要扫黄了，还好我跑得早！！！！机智如我
+                        天佑东莞
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div><!--/feed item-->
-            <div class="CT-feed-item col-xs-12" data-fid="2">
-              <div class="CT-avatar col-xs-3 col-sm-2">
-                <a href="people/zhangrui" class="thumbnail">
-                  <img src="imgs/avatar/zr.jpg" alt="Zhang Rui">
-                </a>
-              </div>
-              <div class="CT-feed-main col-xs-9 col-sm-10">
-                <div class="CT-feed-main-content">
-                  <h4><a href="travel/0001">张睿东莞游</a></h4>
-                  <div class="CT-feed-summary">
-                    哈哈哈哈哈哈！！
-                    今天去东莞耍～买了台macbook
-                    再见，吃饭去！！
+                </div><!--/feed item-->
+                <div class="CT-feed-item col-xs-12" data-fid="1">
+                  <div class="CT-avatar col-xs-3 col-sm-2">
+                    <a href="people/zhangrui" class="thumbnail">
+                      <img src="imgs/avatar/zr.jpg" alt="Zhang Rui">
+                    </a>
                   </div>
-                </div>
-              </div>
-            </div><!--/feed item-->
-            <div class="CT-feed-item col-xs-12" data-fid="0">
-              <div class="CT-avatar col-xs-3 col-sm-2">
-                <a href="people/zhangrui" class="thumbnail">
-                  <img src="imgs/avatar/zr.jpg" alt="Zhang Rui">
-                </a>
-              </div>
-              <div class="CT-feed-main col-xs-9 col-sm-10">
-                <div class="CT-feed-main-content">
-                  <h4><a href="travel/0001">张睿东莞游</a></h4>
-                  <div class="CT-feed-summary">
-                    哈哈哈哈哈哈！！
-                    今天去东莞耍～买了台macbook！听说要扫黄了，还好我跑得早！！！！机智如我
+                  <div class="CT-feed-main col-xs-9 col-sm-10">
+                    <div class="CT-feed-main-content">
+                      <h4><a href="travel/0001">张睿东莞游</a></h4>
+                      <div class="CT-feed-summary">
+                        哈哈哈哈哈哈！！
+                        今天去东莞耍～买了台macbook
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div><!--/feed item-->
-            <div class="CT-feed-item col-xs-12" data-fid="0">
-              <div class="CT-avatar col-xs-3 col-sm-2">
-                <a href="people/zhangrui" class="thumbnail">
-                  <img src="imgs/avatar/zr.jpg" alt="Zhang Rui">
-                </a>
-              </div>
-              <div class="CT-feed-main col-xs-9 col-sm-10">
-                <div class="CT-feed-main-content">
-                  <h4><a href="travel/0001">张睿东莞游</a></h4>
-                  <div class="CT-feed-summary">
-                    哈哈哈哈哈哈！！
-                    今天去东莞耍～买了台macbook！听说要扫黄了，还好我跑得早！！！！机智如我
+                </div><!--/feed item-->
+                <div class="CT-feed-item col-xs-12" data-fid="2">
+                  <div class="CT-avatar col-xs-3 col-sm-2">
+                    <a href="people/zhangrui" class="thumbnail">
+                      <img src="imgs/avatar/zr.jpg" alt="Zhang Rui">
+                    </a>
                   </div>
-                </div>
-              </div>
-            </div><!--/feed item-->
-            <div class="CT-feed-item col-xs-12" data-fid="0">
-              <div class="CT-avatar col-xs-3 col-sm-2">
-                <a href="people/zhangrui" class="thumbnail">
-                  <img src="imgs/avatar/zr.jpg" alt="Zhang Rui">
-                </a>
-              </div>
-              <div class="CT-feed-main col-xs-9 col-sm-10">
-                <div class="CT-feed-main-content">
-                  <h4><a href="travel/0001">张睿东莞游</a></h4>
-                  <div class="CT-feed-summary">
-                    哈哈哈哈哈哈！！
-                    今天去东莞耍～买了台macbook！听说要扫黄了，还好我跑得早！！！！机智如我
+                  <div class="CT-feed-main col-xs-9 col-sm-10">
+                    <div class="CT-feed-main-content">
+                      <h4><a href="travel/0001">张睿东莞游</a></h4>
+                      <div class="CT-feed-summary">
+                        哈哈哈哈哈哈！！
+                        今天去东莞耍～买了台macbook
+                        再见，吃饭去！！
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div><!--/feed item-->
-          </div><!--/row-->
+                </div><!--/feed item-->
+                <div class="CT-feed-item col-xs-12" data-fid="0">
+                  <div class="CT-avatar col-xs-3 col-sm-2">
+                    <a href="people/zhangrui" class="thumbnail">
+                      <img src="imgs/avatar/zr.jpg" alt="Zhang Rui">
+                    </a>
+                  </div>
+                  <div class="CT-feed-main col-xs-9 col-sm-10">
+                    <div class="CT-feed-main-content">
+                      <h4><a href="travel/0001">张睿东莞游</a></h4>
+                      <div class="CT-feed-summary">
+                        哈哈哈哈哈哈！！
+                        今天去东莞耍～买了台macbook！听说要扫黄了，还好我跑得早！！！！机智如我
+                      </div>
+                    </div>
+                  </div>
+                </div><!--/feed item-->
+                <div class="CT-feed-item col-xs-12" data-fid="0">
+                  <div class="CT-avatar col-xs-3 col-sm-2">
+                    <a href="people/zhangrui" class="thumbnail">
+                      <img src="imgs/avatar/zr.jpg" alt="Zhang Rui">
+                    </a>
+                  </div>
+                  <div class="CT-feed-main col-xs-9 col-sm-10">
+                    <div class="CT-feed-main-content">
+                      <h4><a href="travel/0001">张睿东莞游</a></h4>
+                      <div class="CT-feed-summary">
+                        哈哈哈哈哈哈！！
+                        今天去东莞耍～买了台macbook！听说要扫黄了，还好我跑得早！！！！机智如我
+                      </div>
+                    </div>
+                  </div>
+                </div><!--/feed item-->
+                <div class="CT-feed-item col-xs-12" data-fid="0">
+                  <div class="CT-avatar col-xs-3 col-sm-2">
+                    <a href="people/zhangrui" class="thumbnail">
+                      <img src="imgs/avatar/zr.jpg" alt="Zhang Rui">
+                    </a>
+                  </div>
+                  <div class="CT-feed-main col-xs-9 col-sm-10">
+                    <div class="CT-feed-main-content">
+                      <h4><a href="travel/0001">张睿东莞游</a></h4>
+                      <div class="CT-feed-summary">
+                        哈哈哈哈哈哈！！
+                        今天去东莞耍～买了台macbook！听说要扫黄了，还好我跑得早！！！！机智如我
+                      </div>
+                    </div>
+                  </div>
+                </div><!--/feed item-->
+              </div><!--/.row-->
+            </div>
+            <div class="tab-pane fade" id="profile">
+              dasfsd
+            </div>
+            <div class="tab-pane fade" id="messages">
+              dsfasfdss
+            </div>
+          </div><!-- /.tab-content -->
+              
         </div><!--/span-->
 
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">

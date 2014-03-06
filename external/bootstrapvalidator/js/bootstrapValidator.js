@@ -281,6 +281,14 @@
             // Add has-error class to parent element
             $parent.removeClass('has-success').addClass('has-error');
 
+            if($parent.hasClass('has-feedback')) {
+                // Remove success icon
+                $field.next('span').remove();
+
+                // Add error icon
+                $field.parent().append('<span class="glyphicon glyphicon-remove form-control-feedback"></span>');
+            }
+
             $field.data('bootstrapValidator.error').html(message).show();
 
             this.$form.find(this.options.submitButtons).attr('disabled', 'disabled');
@@ -294,6 +302,10 @@
         removeError: function($field) {
             delete this.invalidFields[$field.attr('name')];
             $field.parents('.form-group').removeClass('has-error').addClass('has-success');
+            if($parent.hasClass('has-feedback')) {
+                $field.next('span').remove();
+                $field.parent().append('<span class="glyphicon glyphicon-ok form-control-feedback"></span>');
+            }
             $field.data('bootstrapValidator.error').hide();
             this.$form.find(this.options.submitButtons).removeAttr('disabled');
         },

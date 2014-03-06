@@ -15,7 +15,7 @@
     <![endif]-->
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" type="text/css" href="external/Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="external/Bootstrap3.1.1/css/bootstrap.css">
 
     <!-- Custom styles -->
     <link rel="stylesheet" type="text/css" href="css/Co-Trip.css">
@@ -32,17 +32,182 @@
       <span class="sr-only">Background Image2</span>
     </div>
 
-    <!-- =====MAIN CONTENT===== -->
-    <main class="container" id="main">
-      <div class="left-side-menu">
-        <div>
-          <span class="glyphicon glyphicon-list"></span>
+    <!-- =====LEFT SIDE MENU===== -->
+    <div class="left-menu left-menu-bar">
+      <div class="menu-button" data-target="#left-side-menu-list">
+        <span class="glyphicon glyphicon-list"></span>
+      </div>
+      <div class="buttons">
+        <div class="button" id="explorer-button">
+          <a href="#explorer-box" class="button-link" data-target="#explorer-box">
+            <div class="button-text">
+              浏览
+            </div>
+          </a>
+        </div>
+        <div class="button">
+          <a href="#login-modal" class="button-link" data-toggle="modal" data-target="#login-modal">
+            <div class="button-text">
+              登录
+            </div>
+          </a>
+        </div>
+        <div class="button">
+          <a href="#signup-modal" class="button-link" data-toggle="modal" data-target="#signup-modal">
+            <div class="button-text">
+              注册
+            </div>
+          </a>
         </div>
       </div>
-    </main>
+    </div><!-- /.left-menu-bar -->
+
+    <div class="left-menu left-side-menu" id="left-side-menu-list">
+      <div class="menu-close">
+        <span class="glyphicon glyphicon-remove"></span>
+      </div>
+      <div class="menu-button">
+        <a href="">
+          <span class="glyphicon glyphicon-send" id="icon"></span>
+        </a>
+      </div>
+      <div class="buttons">
+        <div class="button" id="about-button">
+          <a href="#" class="button-link">
+            <div class="button-text">
+              Co-Trip 是什么？
+            </div>
+          </a>
+        </div>
+        <div class="button" id="about-button">
+          <a href="#" class="button-link">
+            <div class="button-text">
+              下载
+            </div>
+          </a>
+        </div>
+        <div class="button" id="about-button">
+          <a href="#" class="button-link">
+            <div class="button-text">
+              联系我们
+            </div>
+          </a>
+        </div>
+      </div>
+    </div><!-- /.left-side-menu -->
+
+    <!-- =====MODAL CONTENTS===== -->
+    <div class="container">
+      <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal-label" aria-hidden="true">
+        <form action="http://localhost:8080/registration" class="form-horizontal" role="form" method="POST" id="login-form">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header bg-info">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="login-modal-label">登录</h4>
+              </div>
+              <div class="modal-body">
+                <div class="form-group has-feedback">
+                  <label for="username-input" class="col-sm-offset-1 col-sm-3 control-label">用户名：</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" id="username-input" name="username" placeholder="用户名/邮箱">
+                  </div>
+                </div>
+                <div class="form-group has-feedback">
+                  <label for="password-input" class="col-sm-offset-1 col-sm-3 control-label">密码：</label>
+                  <div class="col-sm-6">
+                    <input type="password" class="form-control" id="password-input" name="password" placeholder="密码">
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="submit" class="btn btn-primary">登录</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </form><!-- /#login-form -->
+      </div><!-- /#login-modal.modal -->
+
+      <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <form action="" class="form-horizontal" role="form" method="POST" id="signup-form">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header bg-success">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">注册</h4>
+              </div>
+              <div class="modal-body">
+                <div class="form-group has-feedback">
+                  <label for="username-input" class="col-sm-offset-1 col-sm-3 control-label">用户名：</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" id="username-input" name="username" placeholder="用户名">
+                  </div>
+                </div>
+                <div class="form-group has-feedback">
+                  <label for="email-input" class="col-sm-offset-1 col-sm-3 control-label">邮箱：</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" id="email-input" name="email" placeholder="邮箱">
+                  </div>
+                </div>
+                <div class="form-group has-feedback">
+                  <label for="password-input" class="col-sm-offset-1 col-sm-3 control-label">密码：</label>
+                  <div class="col-sm-6">
+                    <input type="password" class="form-control" id="password-input" name="password" placeholder="密码">
+                  </div>
+                </div>
+                <div class="form-group has-feedback">
+                  <label for="password-input" class="col-sm-offset-1 col-sm-3 control-label">密码again：</label>
+                  <div class="col-sm-6">
+                    <input type="password" class="form-control" id="password-input" name="password" placeholder="密码">
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-success">注册</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </form><!-- /#signup-form -->
+      </div><!-- /#signup-modal.modal -->
+    </div>
+
+    <div class="speed-dial" id="explorer-box">
+      <div class="row" style="height: 100%;">
+        <div class="box col-sm-4">
+          <div class="box-contents">1</div>
+        </div>
+        <div class="box col-sm-4">
+          <div class="box-contents">2</div>
+        </div>
+        <div class="box col-sm-4">
+          <div class="box-contents">3</div>
+        </div>
+        <div class="box col-sm-4">
+          <div class="box-contents">4</div>
+        </div>
+        <div class="box col-sm-4">
+          <div class="box-contents">5</div>
+        </div>
+        <div class="box col-sm-4">
+          <div class="box-contents">6</div>
+        </div>
+        <div class="box col-sm-4">
+          <div class="box-contents">7</div>
+        </div>
+        <div class="box col-sm-4">
+          <div class="box-contents">8</div>
+        </div>
+        <div class="box col-sm-4">
+          <div class="box-contents">9</div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- =====FOOTER===== -->
-    <footer id="footer">
+    <footer id="footer" class="hide">
       <div class="container">
         <p class="text-center">All content copyright <a href="/">Co-Trip</a> © 2014 • All rights reserved.</p>
       </div>
@@ -51,10 +216,13 @@
     <!-- jQuery core Javascript -->
     <script type="text/javascript" src="external/jQuery/jquery-1.10.2.js"></script>
 
+    <!-- jQuery form plugin Javascript -->
+    <script type="text/javascript" src="external/jQuery.form/jquery.form.js"></script>
+
     <!-- Bootstrap core Javascript -->
-    <script type="text/javascript" src="external/Bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="external/Bootstrap3.1.1/js/bootstrap.js"></script>
 
     <!-- Custom Javascript -->
-    <script type="text/javascript" src="js/index-custom.js"></script>
+    <script type="text/javascript" src="js/index2.js"></script>
   </body>
 </html>
