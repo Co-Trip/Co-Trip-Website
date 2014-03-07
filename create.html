@@ -243,16 +243,16 @@
 
             <div class="panel-group daily-plans" id="accordion">
               <div class="panel panel-default daily-plan" data-dpid="0">
-                <div class="panel-heading day-date" data-date-year="2014" data-date-month="3" data-date-day="1">
+                <div class="panel-heading day-date" data-date"2014-03-01">
                   <h4 class="panel-title">
                     <a data-toggle="collapse" data-target="#collapse-1" data-parent="#accordion" href="#collapse-1">
                       Day1 2014-3-1
                     </a>
                   </h4>
                 </div>
-                <div id="collapse-1" class="panel-collapse collapse in">
+                <div id="collapse-1" class="daily-detail panel-collapse collapse in">
                   <div class="panel-body">
-                    <div class="daily-detail">
+                    <div class="detail-content">
                       <textarea name="daily[0][datail]" class="form-control" style="height: 150px;" placeholder="Daily detail"></textarea>
                     </div>
                   </div>
@@ -262,6 +262,7 @@
           </div>
           
         </form>
+        
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
           <div class="list-group">
             <a href="#" class="list-group-item active">Link</a>
@@ -296,8 +297,11 @@
     <script type="text/javascript" src="external/datetimepicker/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
     <script type="text/javascript" src="external/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
 
-    <!-- Form Validator core CSS -->
+    <!-- Form Validator core Javascript -->
     <script type="text/javascript" src="external/bootstrapvalidator/js/bootstrapValidator.js"></script>
+
+    <!-- Django Dynamic Formset core Javascript -->
+    <script type="text/javascript" src="external/django-dynamic-formset/jquery.formset.js"></script>
 
     <!-- Custom Javascript -->
     <script type="text/javascript" src="js/create.js"></script>

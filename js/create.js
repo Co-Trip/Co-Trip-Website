@@ -41,20 +41,114 @@ $('.form_date').datetimepicker({
     startDate: new Date().format('yyyy-MM-dd')
 });
 
-$('#plan-form').submit(function() {
-    alert('submit');
-    sessionStorage.setItem('planForm', $(this).html());
-});
-
-if(sessionStorage.getItem('planForm')) {
-    $('#plan-form').html(sessionStorage.getItem('planForm'));
-    sessionStorage.removeItem('input');
-}
-
 /*
  * Form Validator
  * --------------------------------------------------
  */
+$('#plan-form').bootstrapValidator({
+    live: 'submitted',
+    message: 'sdfasdf',
+    submitButtons: '#plan-submit-button',
+    fields: {
+        title: {
+            message: 'The title is not valid',
+            validators: {
+                notEmpty: {
+                    message: 'The title is required and can\'t be empty'
+                }, 
+                regexp: {
+                    regexp: /^[a-zA-Z0-9_\.]+$/,
+                    message: 'The username can only consist of alphabetical, number, dot and underscore'
+                }
+            }
+        },
+        home_city: {
+            validators: {
+                notEmpty: {
+                    message: 'Your home city is required and can\' be empty'
+                }
+            }
+        },
+        destination_city: {
+            validators: {
+                notEmpty: {
+                    message: 'Your destination city is required and can\' be empty'
+                }
+            }
+        },
+        leaving_date: {
+            validators: {
+                notEmpty: {
+                    message: 'Your leaving date is required and can\' be empty'
+                },
+                callback: {
+                    message: 'fxxxxk',
+                    callback: function(value, calidator) {
+                        console.log('leaving date validating');
+                        return value >= (new Date()).format('yyyy-MM-dd');
+                    }
+                }
+                    
+            }
+        },
+        leaving_transportation: {
+            validators: {
+                notEmpty: {
+                    message: 'Your leaving transportation is required and can\' be empty'
+                }
+            }
+        },
+        return_date: {
+            validators: {
+                notEmpty: {
+                    message: 'Your return date is required and can\' be empty'
+                },
+                callback: {
+                    message: 'Your return date must be smaller than yourn leaving date',
+                    callback: function(value, calidator) {
+                        return value >= $('[name="leaving_date"]').val();
+                    }
+                }
+            }
+        },
+        return_transportation: {
+            validators: {
+                notEmpty: {
+                    message: 'Your return transportation is required and can\' be empty'
+                }
+            }
+        },
+        participants_number: {
+
+        },
+        participants: {
+
+        },
+        participants_can_edit: {
+
+        },
+        is_public: {
+
+        }
+    }
+});
+
+var startDate = new Date($('#id-leaving-date').val());
+var endDate = new Date($('#id-return-date').val());
+var dayNumber = (endDate - startDate) / 86400000 + 1;
+
+var index = 1; // = 1 ~ dayNumber
+var dpid = index;
+var nowDate = startDate;
+nowDate.setDate(startDate.getDate() + (index - 1));
+var targetId = "collapse-"; // targetId + index
+var panelTitle = "Day" + index + " " + nowDate.format("yyyy-MM-dd");
+
+var $dailyPlan = $('.daily-plan');
+var $dayDate = $dailyPlan.find('.day-date');
+var $dailyDetail = $dailyPlan.find('.daily-detail');
+var $dailyContent = $dailyDetail.find('.daily-content');
+
 $(document).ready(function() {
     $('.add-button').click(function(event) {
         var $lastDailyPlan = $('.daily-plan').last();
@@ -93,91 +187,8 @@ $(document).ready(function() {
         $('#' + cid).collapse('toggle');
     });
 
-    $('#plan-form').bootstrapValidator({
-        live: 'submitted',
-        message: 'sdfasdf',
-        submitButtons: '#plan-submit-button',
-        fields: {
-            title: {
-                message: 'The title is not valid',
-                validators: {
-                    notEmpty: {
-                        message: 'The title is required and can\'t be empty'
-                    }, 
-                    regexp: {
-                        regexp: /^[a-zA-Z0-9_\.]+$/,
-                        message: 'The username can only consist of alphabetical, number, dot and underscore'
-                    }
-                }
-            },
-            home_city: {
-                validators: {
-                    notEmpty: {
-                        message: 'Your home city is required and can\' be empty'
-                    }
-                }
-            },
-            destination_city: {
-                validators: {
-                    notEmpty: {
-                        message: 'Your destination city is required and can\' be empty'
-                    }
-                }
-            },
-            leaving_date: {
-                validators: {
-                    notEmpty: {
-                        message: 'Your leaving date is required and can\' be empty'
-                    },
-                    callback: {
-                        message: 'fxxxxk',
-                        callback: function(value, calidator) {
-                            console.log('leaving date validating');
-                            return value >= (new Date()).format('yyyy-MM-dd');
-                        }
-                    }
-                        
-                }
-            },
-            leaving_transportation: {
-                validators: {
-                    notEmpty: {
-                        message: 'Your leaving transportation is required and can\' be empty'
-                    }
-                }
-            },
-            return_date: {
-                validators: {
-                    notEmpty: {
-                        message: 'Your return date is required and can\' be empty'
-                    },
-                    callback: {
-                        message: 'Your return date must be smaller than yourn leaving date',
-                        callback: function(value, calidator) {
-                            return value >= $('[name="leaving_date"]').val();
-                        }
-                    }
-                }
-            },
-            return_transportation: {
-                validators: {
-                    notEmpty: {
-                        message: 'Your return transportation is required and can\' be empty'
-                    }
-                }
-            },
-            participants_number: {
-
-            },
-            participants: {
-
-            },
-            participants_can_edit: {
-
-            },
-            is_public: {
-
-            }
-        }
+    $('#plan-form').submit(function(event) {
+        var array = {};
+        array
     });
 }); 
