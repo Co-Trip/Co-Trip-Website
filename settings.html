@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Co-Trip">
+    <meta name="description" content="Travel">
+    <meta name="keywords" content="Travel, Co-Trip, Coopertaion, Online">
+
+    <title>Settings | Co-Trip</title>
+
+    <!--[if ls IE 10]>
+      <h1>Are you kidding? You are still using IE?</h1>
+    <![endif]-->
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="external/Bootstrap3.1.1/css/bootstrap.css">
+
+    <!-- Datetimepicker core CSS -->
+    <link rel="stylesheet" type="text/css" href="external/datetimepicker/css/bootstrap-datetimepicker.css">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/Co-Trip.css">
+    <link rel="stylesheet" type="text/css" href="css/settings.css">
+  </head>
+
+  <body>
+    <!-- =====NAVBAR===== -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">Co-Trip</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="plan/explore">Explore</a></li>
+            <li><a href="">Help</a></li>
+          </ul>
+
+          <form class="navbar-form navbar-left" role="search" action="search" method="GET">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search" name="q">
+            </div>
+            <input type="submit" class="btn btn-default" value="Search">
+          </form>
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/notifications" class="CT-navbar-notification-indicator" data-container="body" data-toggle="tooltip" data-placement="bottom" title="You have no unread notifications." data-original-title="Tooltip on bottom">
+                <span class="mail-status notification-unread glyphicon glyphicon-record" id="notification-circle"></span>
+              </a>
+            </li>
+            <li class="dropdown">
+              <a class="CT-user-profile dropdown-toggle" href="#" data-toggle="dropdown">
+                <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="avatar">
+                <span class="name">Zhang Rui</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="people/zhangrui">
+                    <span class="glyphicon glyphicon-user"></span> My Account
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="messages">
+                    <span class="glyphicon glyphicon-envelope"></span> Messages
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="setting">
+                    <span class="glyphicon glyphicon-cog"></span> Setting
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="logout">
+                    <span class="glyphicon glyphicon-off"></span> Log out
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- =====MAIN CONTENT===== -->
+    <main class="container">
+      <legend>账号设置</legend>
+      <div class="row">
+        <div class="col-sm-3">
+          <ul class="nav nav-pills nav-stacked CT-settings-sidebar">
+            <li class="active"><a href="#profile-edit" data-toggle="pill">个人信息</a></li>
+            <li><a href="#pw-setting" data-toggle="pill">密码</a></li>
+            <li><a href="#email-setting" data-toggle="pill">邮件</a></li>
+            <li><a href="#notification-center" data-toggle="pill">消息</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9">
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="profile-edit">
+              <div class="panel panel-default">
+                <div class="panel-heading">个人信息</div>
+                <div class="panel-body">
+                  <div class="row">
+                    <form class="col-sm-8" accept-charset="UTF-8" method="POST" action="" id="">
+                      <div class="form-group">
+                        <label class="control-label" for="id-username">姓名</label>
+                        <input type="text" class="form-control" name="username" id="id-username" value="doubi" disabled>
+                      </div>
+                      <div class="form-group has-feedback">
+                        <label class="control-label" for="id-email">邮箱</label>
+                        <input type="email" class="form-control" name="email" id="id-email" value="zhangrui@doubi.sse">
+                        <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                      </div>
+                      
+                      <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <div class="col-sm-4 profile-preview">
+                      <label class="control-label" for="ava">预览</label>
+                      <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="avatar" id="ava">
+                      <span class="name"><h3>张睿 <small>逗比</small></h3></span>
+                      <hr>
+                      <ul class="user-info">
+                        <li class="text-muted">
+                          <span class="glyphicon glyphicon-map-marker"></span> 上海
+                        </li>
+                        <li class="text-muted">
+                          <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:doubi@shabi.sse">doubi@shabi.sse</a>
+                        </li>
+                        <li class="text-muted">
+                          <span class="glyphicon glyphicon-flag"></span> 2014年2月29日加入
+                        </li>
+                        <li class="text-muted">
+                          
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                    
+                </div>
+              </div>
+            </div><!-- #profile-edit -->
+
+            <div class="tab-pane fade" id="pw-setting">
+              sadfsdafswqerqewgfedg
+            </div><!-- #pw-setting -->
+
+            <div class="tab-pane fade" id="email-setting">
+              erfgdgverg
+            </div><!-- #email-setting -->
+
+            <div class="tab-pane fade" id="notification-center">
+              dsfadsfegferwgeq
+            </div><!-- #notification-center -->
+          </div>
+        </div>
+      </div>
+
+      <!-- =====FOOTER===== -->
+      <footer id="footer">
+        <div class="container">
+          <p class="text-center">All content copyright <a href="/">Co-Trip</a> © 2014 • All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- jQuery core Javascript -->
+    <script type="text/javascript" src="external/jQuery/jquery-1.10.2.js"></script>
+
+    <!-- Bootstrap core Javascript -->
+    <script type="text/javascript" src="external/Bootstrap3.1.1/js/bootstrap.js"></script>
+
+    <!-- Custom Javascript -->
+    <script type="text/javascript" src="js/settings.js"></script>
+  </body>
+</html>

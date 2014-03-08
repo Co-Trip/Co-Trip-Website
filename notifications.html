@@ -60,7 +60,7 @@
               </a>
             </li>
             <li class="dropdown">
-              <a class="CT-user-profile dropdown-toggle" href="#profile" data-toggle="dropdown">
+              <a class="CT-user-profile dropdown-toggle" href="#" data-toggle="dropdown">
                 <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="avatar">
                 <span class="name">Zhang Rui</span>
               </a>
@@ -99,106 +99,115 @@
     <main class="container">
       <div class="notification-nav-tabs">
         <ul class="nav nav-tabs">
-          <li class="active"><a href="#">Notifications</a></li>
-          <li><a href="#">Messages</a></li>
+          <li class="active"><a href="#notifications" data-toggle="tab">Notifications</a></li>
+          <li><a href="#messages" data-toggle="tab">Messages</a></li>
           <li class="pull-right"><button type="button" class="btn btn-default" data-toggle="clear_notification">Mark all as read</button></li>
         </ul>
       </div><!-- /nav-tabs -->
 
       <div class="row" id="nav-tab-contents">
-        <div class="CT-notification-center">
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="notifications">
+            <div class="CT-notification-center">
+              <div class="col-sm-3">
+                <ul class="nav nav-pills nav-stacked CT-settings-sidebar">
+                  <li class="active">
+                    <a href="" id="unread">
+                      <span class="badge pull-right" id="unread-badge">123</span>
+                      Unread
+                    </a>
+                  </li><!-- /left-side-bar-column -->
+                  <li>
+                    <a href="" id="read">
+                      <span class="badge pull-right" id="read-badge">3</span>
+                      Read
+                    </a>
+                  </li><!-- /left-side-bar-column -->
+                  <li>
+                    <a href="" id="all">
+                      <span class="badge pull-right" id="all-badge">126</span>
+                      All
+                    </a>
+                  </li><!-- /left-side-bar-column -->
+                </ul><!-- /left-side-bar -->
+              </div>
 
-          <div class="col-sm-3">
-            <div class="list-group">
-              <a href="" class="list-group-item active" id="unread">
-                <span class="badge" id="unread-badge">123</span>
-                Unread
-              </a>
-              <a href="" class="list-group-item" id="read">
-                <span class="badge" id="read-badge">3</span>
-                Read
-              </a>
-              <a href="" class="list-group-item" id="all">
-                <span class="badge" id="all-badge">126</span>
-                All
-              </a>
-            </div><!-- /left-side-bar-column -->
-            
-          </div><!-- /left-side-bar -->
-
-          <div class="col-sm-9">
-            <ul class="media-list CT-notification-list">
-              <li class="media CT-notification-item" data-nid="0">
-                <a class="pull-left" href="#">
-                  <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="media-object avatar">
-                </a>
-                <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
-                <div class="media-body CT-notification-item-content">
-                  <h4 class="media-heading">
-                    <a href="people/zhangrui">Zhang Rui</a> wants to be your friend.
-                  </h4>
-                  <div class="pull-right">
-                    <button type="button" class="btn btn-primary btn-xs">Accept</button>
-                    <button type="button" class="btn btn-danger btn-xs">Reject</button>
-                  </div>
-                  <small>PS: <i>fxxk!!!!!</i></small>
-                </div>
-              </li>
-              <li class="media CT-notification-item" data-nid="1">
-                <a class="pull-left" href="#">
-                  <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="media-object avatar">
-                </a>
-                <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
-                <div class="media-body CT-notification-item-content">
-                  <h4 class="media-heading">
-                    <a href="people/hyh">Forever Hu</a> wants to be your friend.
-                  </h4>
-                  <div class="pull-right">
-                    <button type="button" class="btn btn-primary btn-xs">Accept</button>
-                    <button type="button" class="btn btn-danger btn-xs">Reject</button>
-                  </div>
-                  ...
-                </div>
-              </li>
-              <li class="media CT-notification-item" data-nid="2">
-                <a class="pull-left" href="#">
-                  <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="media-object avatar">
-                </a>
-                <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
-                <div class="media-body CT-notification-item-content">
-                  <h4 class="media-heading">
-                    <a href="people/zhangrui">DQ</a> wants to be your friend.
-                  </h4>
-                  <div class="pull-right">
-                    <button type="button" class="btn btn-primary btn-xs">Accept</button>
-                    <button type="button" class="btn btn-danger btn-xs">Reject</button>
-                  </div>
-                  ...
-                </div>
-              </li>
-              <li class="media CT-notification-item" data-nid="3">
-                <a class="pull-left" href="#">
-                  <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="media-object avatar">
-                </a>
-                <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
-                <div class="media-body CT-notification-item-content">
-                  <h4 class="media-heading">
-                    <a href="people/zhangrui">Zhang Rui</a> wants to be your friend.
-                  </h4>
-                  <div class="pull-right">
-                    <button type="button" class="btn btn-primary btn-xs">Accept</button>
-                    <button type="button" class="btn btn-danger btn-xs">Reject</button>
-                  </div>
-                  <small>PS: <i>sadfsd</i></small>
-                </div>
-              </li>
-            </ul>
-          </div><!-- /right-contents -->
-        </div><!-- /notification-tab -->
-
-        <div class="message-contents hide">
-          asdfdsfa
-        </div><!-- /message-tab -->
+              <div class="col-sm-9">
+                <ul class="media-list CT-notification-list">
+                  <li class="media CT-notification-item" data-nid="0">
+                    <a class="pull-left" href="#">
+                      <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="media-object avatar">
+                    </a>
+                    <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
+                    <div class="media-body CT-notification-item-content">
+                      <h4 class="media-heading">
+                        <a href="people/zhangrui">Zhang Rui</a> wants to be your friend.
+                      </h4>
+                      <div class="pull-right">
+                        <button type="button" class="btn btn-primary btn-xs">Accept</button>
+                        <button type="button" class="btn btn-danger btn-xs">Reject</button>
+                      </div>
+                      <small>PS: <i>fxxk!!!!!</i></small>
+                    </div>
+                  </li>
+                  <li class="media CT-notification-item" data-nid="1">
+                    <a class="pull-left" href="#">
+                      <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="media-object avatar">
+                    </a>
+                    <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
+                    <div class="media-body CT-notification-item-content">
+                      <h4 class="media-heading">
+                        <a href="people/hyh">Forever Hu</a> wants to be your friend.
+                      </h4>
+                      <div class="pull-right">
+                        <button type="button" class="btn btn-primary btn-xs">Accept</button>
+                        <button type="button" class="btn btn-danger btn-xs">Reject</button>
+                      </div>
+                      ...
+                    </div>
+                  </li>
+                  <li class="media CT-notification-item" data-nid="2">
+                    <a class="pull-left" href="#">
+                      <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="media-object avatar">
+                    </a>
+                    <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
+                    <div class="media-body CT-notification-item-content">
+                      <h4 class="media-heading">
+                        <a href="people/zhangrui">DQ</a> wants to be your friend.
+                      </h4>
+                      <div class="pull-right">
+                        <button type="button" class="btn btn-primary btn-xs">Accept</button>
+                        <button type="button" class="btn btn-danger btn-xs">Reject</button>
+                      </div>
+                      ...
+                    </div>
+                  </li>
+                  <li class="media CT-notification-item" data-nid="3">
+                    <a class="pull-left" href="#">
+                      <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="media-object avatar">
+                    </a>
+                    <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
+                    <div class="media-body CT-notification-item-content">
+                      <h4 class="media-heading">
+                        <a href="people/zhangrui">Zhang Rui</a> wants to be your friend.
+                      </h4>
+                      <div class="pull-right">
+                        <button type="button" class="btn btn-primary btn-xs">Accept</button>
+                        <button type="button" class="btn btn-danger btn-xs">Reject</button>
+                      </div>
+                      <small>PS: <i>sadfsd</i></small>
+                    </div>
+                  </li>
+                </ul>
+              </div><!-- /right-contents -->
+            </div><!-- /notification-tab -->
+          </div>
+          <div class="tab-pane fade" id="messages">
+            <div class="message-contents">
+              asdfdsfa
+            </div><!-- /message-tab -->
+          </div>
+        </div>
       </div>
 
       <!-- =====FOOTER===== -->
