@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Co-Trip">
+    <meta name="description" content="Travel">
+    <meta name="keywords" content="Travel, Co-Trip, Coopertaion, Online">
+
+    <title>Co-Trip</title>
+
+    <!--[if ls IE 10]>
+      <h1>Are you kidding? You are still using IE?</h1>
+    <![endif]-->
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="external/Bootstrap3.1.1/css/bootstrap.css">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/Co-Trip.css">
+    <link rel="stylesheet" type="text/css" href="css/index2.2.css">
+  </head>
+
+  <body class="no-nav">
+    <!-- =====BACKGROUND===== -->
+    <div class="background" id="background-image1">
+      <span class="sr-only">Background Image1</span>
+    </div>
+
+    <div class="background" id="background-image2">
+      <span class="sr-only">Background Image2</span>
+    </div>
+
+    <!-- =====NAVBAR===== -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">Co-Trip</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="plan/explore">Explore</a></li>
+            <li><a href="">Help</a></li>
+          </ul>
+
+          <form class="navbar-form navbar-left" role="search" action="search" method="GET">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search" name="q">
+            </div>
+            <input type="submit" class="btn btn-default" value="Search">
+          </form>
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/notifications" class="CT-navbar-notification-indicator" data-container="body" data-toggle="tooltip" data-placement="bottom" title="You have no unread notifications." data-original-title="Tooltip on bottom">
+                <span class="mail-status notification-unread glyphicon glyphicon-record" id="notification-circle"></span>
+              </a>
+            </li>
+            <li class="dropdown">
+              <a class="CT-user-profile dropdown-toggle" href="#" data-toggle="dropdown">
+                <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="avatar">
+                <span class="name">Zhang Rui</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="people/zhangrui">
+                    <span class="glyphicon glyphicon-user"></span> My Account
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="messages">
+                    <span class="glyphicon glyphicon-envelope"></span> Messages
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="setting">
+                    <span class="glyphicon glyphicon-cog"></span> Setting
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="logout">
+                    <span class="glyphicon glyphicon-off"></span> Log out
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- =====MAIN===== -->
+    <div class="container-fluid" id="main">
+      <div class="row">
+        <div class="col-sm-offset-1 col-sm-3 left-side-panel">
+          <div class="logo-container">
+            <img src="imgs/Co-Trip text.png" alt="text" class="logo">
+          </div>
+          <div class="buttons">
+            <a href="" class="btn btn-warning btn-lg btn-block">探索</a>
+            <a href="" class="btn btn-success btn-lg btn-block">关于</a>
+          </div>
+        </div>
+        <div class="col-sm-offset-2 col-sm-6 right-side-panel">
+          <div class="block">
+            <div class="signup-block">
+              <h2 class="page-header text-right">注 册</h2>
+              <form id="signup-form" method="POST" role="form" class="form-signup" action="">
+                <h4>使用常用邮箱注册</h4>
+                <input name="email" type="email" class="form-control" placeholder="常用邮箱" required autofocus>
+                <input name="password" type="password" class="form-control" placeholder="设置密码" required>
+                <button class="btn btn-info" type="submit" form="signup-form">开启我的Co-Trip</button>
+                <button class="btn btn-link pull-right" type="button" id="login-button">已有账号</button>
+              </form>
+            </div>
+            <div class="login-block" style="display: none;">
+              <h2 class="page-header text-right">登 录</h2>
+              <form id="login-form" method="POST" role="form" class="form-login" action="">
+                <h4>使用常用邮箱登录</h4>
+                <input name="email" type="email" class="form-control" placeholder="常用邮箱" required autofocus>
+                <input name="username" type="text" class="form-control" placeholder="用户名" required>
+                <input name="password" type="password" class="form-control" placeholder="密码" required>
+                <input name="password_2" type="password" class="form-control" placeholder="重复密码" required>
+                <button class="btn btn-info" type="submit" form="login-form">开启我的Co-Trip</button>
+                <button class="btn btn-link pull-right" type="button" id="signup-button">回去注册</button>
+              </form>
+            </div>
+          </div>
+          <div class="social-login">
+            <h4>或使用社交账号登录</h4>
+            <ul class="social-list">
+              <li class="social">
+                <img src="imgs/weibo_64x64.png" alt="" class="social-logo pull-left" style="width: 36px;">
+                <div class="social-button">
+                  <a href="/login/weibo" class="btn btn-sm btn-danger">使用新浪微博</a>
+                </div>
+              </li>
+              <li class="social">
+                <img src="imgs/renren_64x64.png" alt="" class="social-logo pull-left" style="width: 36px;">
+                <div class="social-button">
+                  <a href="/login/weibo" class="btn btn-sm btn-primary">使用人人账号</a>
+                </div>
+              </li>
+              <li class="social">
+                <img src="imgs/QQ_64x64.png" alt="" class="social-logo pull-left" style="width: 36px;">
+                <div class="social-button">
+                  <a href="/login/weibo" class="btn btn-sm btn-warning">使用腾讯QQ</a>
+                </div>
+              </li>
+              <li class="social">
+                <img src="imgs/douban_48x48.png" alt="" class="social-logo pull-left" style="width: 36px;">
+                <div class="social-button">
+                  <a href="/login/weibo" class="btn btn-sm btn-success">使用豆瓣账号</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =====FOOTER===== -->
+    <footer id="footer">
+      <div class="container">
+        <p class="text-center">All content copyright <a href="/">Co-Trip</a> © 2014 • All rights reserved.</p>
+      </div>
+    </footer>
+    
+    <!-- jQuery core Javascript -->
+    <script type="text/javascript" src="external/jQuery/jquery-1.10.2.js"></script>
+
+    <!-- Bootstrap core Javascript -->
+    <script type="text/javascript" src="external/Bootstrap3.1.1/js/bootstrap.js"></script>
+
+    <!-- Custom Javascript -->
+    <script type="text/javascript" src="js/index2.2.js"></script>
+  </body>
+</html>
