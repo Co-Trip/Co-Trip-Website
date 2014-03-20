@@ -15,10 +15,7 @@
     <![endif]-->
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" type="text/css" href="external/Bootstrap/css/bootstrap.css">
-
-    <!-- Datetimepicker core CSS -->
-    <link rel="stylesheet" type="text/css" href="external/datetimepicker/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" type="text/css" href="external/Bootstrap3.1.1/css/bootstrap.css">
 
     <!-- Custom styles -->
     <link rel="stylesheet" type="text/css" href="css/Co-Trip.css">
@@ -98,10 +95,10 @@
     <!-- =====MAIN CONTENT===== -->
     <main class="container">
       <div class="notification-nav-tabs">
-        <ul class="nav nav-tabs">
+        <ul class="nav nav-tabs" id="main-tabs">
           <li class="active"><a href="#messages" data-toggle="tab">Messages</a></li>
           <li><a href="#notifications" data-toggle="tab">Notifications</a></li>
-          <li class="pull-right"><button type="button" class="btn btn-default" data-toggle="clear_notification">Mark all as read</button></li>
+          <li class="pull-right"><button role="button" class="btn btn-default" data-toggle="clear_notification">Mark all as read</button></li>
         </ul>
       </div><!-- /nav-tabs -->
 
@@ -116,7 +113,7 @@
                   </a>
                 </div>
                   
-                <ul class="nav nav-pills nav-stacked CT-settings-sidebar">
+                <ul class="nav nav-pills nav-stacked CT-sidetabbar" id="messages-tabs">
                   <li class="active">
                     <a href="#inbox" data-toggle="pill">
                       <span class="badge pull-right" id="inbox-badge">123</span>
@@ -125,13 +122,11 @@
                   </li><!-- /left-side-bar-column -->
                   <li>
                     <a href="#sent" data-toggle="pill">
-                      <span class="badge pull-right" id="sent-badge">3</span>
                       已发送
                     </a>
                   </li><!-- /left-side-bar-column -->
                   <li>
                     <a href="#trash" data-toggle="pill">
-                      <span class="badge pull-right" id="trash-badge">126</span>
                       垃圾箱
                     </a>
                   </li><!-- /left-side-bar-column -->
@@ -147,7 +142,7 @@
                   </div><!-- /#inbox -->
                   <div class="tab-pane fade" id="sent">
                     <ul class="media-list CT-list" id="sent-list">
-                      <li class="media CT-message-item">
+                      <li class="media CT-message-item fade in">
                         <a class="pull-left" href="#">
                           <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="media-object avatar">
                         </a>
@@ -168,7 +163,7 @@
                   </div><!-- /#sent -->
                   <div class="tab-pane fade" id="trash">
                     <ul class="media-list CT-list" id="trash-list">
-                      <li class="media CT-message-item">
+                      <li class="media CT-message-item fade in">
                         <a class="pull-left" href="#">
                           <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="media-object avatar">
                         </a>
@@ -193,7 +188,7 @@
           <div class="tab-pane fade" id="notifications">
             <div class="CT-notification-center">
               <div class="col-sm-3">
-                <ul class="nav nav-pills nav-stacked CT-settings-sidebar">
+                <ul class="nav nav-pills nav-stacked CT-sidetabbar" id="notifications-tabs">
                   <li class="active">
                     <a href="#unread" data-toggle="pill">
                       <span class="badge pull-right" id="unread-badge">123</span>
@@ -201,14 +196,7 @@
                     </a>
                   </li><!-- /left-side-bar-column -->
                   <li>
-                    <a href="#read" data-toggle="pill">
-                      <span class="badge pull-right" id="read-badge">3</span>
-                      已读消息
-                    </a>
-                  </li><!-- /left-side-bar-column -->
-                  <li>
                     <a href="#all" data-toggle="pill">
-                      <span class="badge pull-right" id="all-badge">126</span>
                       所有消息
                     </a>
                   </li><!-- /left-side-bar-column -->
@@ -219,75 +207,40 @@
                 <div class="tab-content">
                   <div class="tab-pane active fade in" id="unread">
                     <ul class="media-list CT-list">
-                      <li class="media CT-notification-item" data-nid="0">
-                        <a class="pull-left" href="#">
-                          <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="media-object avatar">
-                        </a>
+                      <li class="media CT-notification-item" data-id="1">
                         <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
                         <div class="media-body CT-notification-item-content">
                           <h4 class="media-heading">
-                            <a href="people/zhangrui">Zhang Rui</a> wants to be your friend.
+                            <a href="people/zhangrui">张睿</a> 关注了你 <small><i>5分钟前</i></small>
                           </h4>
-                          <div class="pull-right">
-                            <button type="button" class="btn btn-primary btn-xs">Accept</button>
-                            <button type="button" class="btn btn-danger btn-xs">Reject</button>
-                          </div>
-                          <small>PS: <i>fxxk!!!!!</i></small>
                         </div>
                       </li>
-                      <li class="media CT-notification-item" data-nid="1">
-                        <a class="pull-left" href="#">
-                          <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="media-object avatar">
-                        </a>
+                      <li class="media CT-notification-item">
                         <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
                         <div class="media-body CT-notification-item-content">
                           <h4 class="media-heading">
-                            <a href="people/hyh">Forever Hu</a> wants to be your friend.
+                            <a href="people/hyh">Forever Hu</a> 发给你一条<a href="">私信</a>
                           </h4>
-                          <div class="pull-right">
-                            <button type="button" class="btn btn-primary btn-xs">Accept</button>
-                            <button type="button" class="btn btn-danger btn-xs">Reject</button>
-                          </div>
-                          ...
                         </div>
                       </li>
-                      <li class="media CT-notification-item" data-nid="2">
-                        <a class="pull-left" href="#">
-                          <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="media-object avatar">
-                        </a>
+                      <li class="media CT-notification-item">
                         <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
                         <div class="media-body CT-notification-item-content">
                           <h4 class="media-heading">
                             <a href="people/zhangrui">DQ</a> wants to be your friend.
                           </h4>
-                          <div class="pull-right">
-                            <button type="button" class="btn btn-primary btn-xs">Accept</button>
-                            <button type="button" class="btn btn-danger btn-xs">Reject</button>
-                          </div>
-                          ...
                         </div>
                       </li>
-                      <li class="media CT-notification-item" data-nid="3">
-                        <a class="pull-left" href="#">
-                          <img src="imgs/avatar/zr.jpg" alt="Zhang Rui" class="media-object avatar">
-                        </a>
+                      <li class="media CT-notification-item">
                         <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
                         <div class="media-body CT-notification-item-content">
                           <h4 class="media-heading">
                             <a href="people/zhangrui">Zhang Rui</a> wants to be your friend.
                           </h4>
-                          <div class="pull-right">
-                            <button type="button" class="btn btn-primary btn-xs">Accept</button>
-                            <button type="button" class="btn btn-danger btn-xs">Reject</button>
-                          </div>
-                          <small>PS: <i>sadfsd</i></small>
                         </div>
                       </li>
                     </ul>
                   </div><!-- /#unread -->
-                  <div class="tab-pane fade" id="read">
-                    
-                  </div><!-- /#read -->
                   <div class="tab-pane fade" id="all">
                     
                   </div><!-- /#all -->
@@ -297,7 +250,7 @@
             </div><!-- /notification-tab -->
           </div><!-- /#notifications -->
         </div>
-      </div>
+      </div><!-- #nav-tab-contents -->
 
       <!-- =====FOOTER===== -->
       <footer id="footer">
@@ -311,7 +264,7 @@
     <script type="text/javascript" src="external/jQuery/jquery-1.10.2.js"></script>
 
     <!-- Bootstrap core Javascript -->
-    <script type="text/javascript" src="external/Bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="external/Bootstrap3.1.1/js/bootstrap.js"></script>
 
     <!-- Custom Javascript -->
     <script type="text/javascript" src="js/notifications.js"></script>

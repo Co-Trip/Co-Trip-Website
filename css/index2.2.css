@@ -32,7 +32,7 @@ footer {
 .background {
   z-index: 0;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
+     -moz-background-size: cover;
   background-size: cover;
   background-color: rgb(39, 143, 202);
   background-repeat: no-repeat;

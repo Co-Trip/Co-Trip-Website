@@ -11,7 +11,9 @@ body {
 .btn {
   min-width: 74px;
 }
-/* .btn-outline */
+/*
+ * .btn-outline
+ */
 .btn-outline {
   background-color: transparent;
 }

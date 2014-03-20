@@ -4,12 +4,28 @@
 		"selected_items":
 		[
 			[
-				"form",
-				"form-control"
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"marg",
+				"margin"
 			],
 			[
 				"mar",
-				"margin"
+				"margin-top"
+			],
+			[
+				"media",
+				"mediaBody"
+			],
+			[
+				"sel",
+				"selector"
+			],
+			[
+				"form",
+				"form-control"
 			],
 			[
 				"margin",
@@ -18,14 +34,6 @@
 			[
 				"pa",
 				"padding-top"
-			],
-			[
-				"marg",
-				"margin-bottom"
-			],
-			[
-				"padd",
-				"padding-right"
 			],
 			[
 				"width",
@@ -460,26 +468,10 @@
 	"buffers":
 	[
 		{
-			"file": "notifications.html",
+			"file": "create2.0.html",
 			"settings":
 			{
-				"buffer_size": 14680,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "index2.2.html",
-			"settings":
-			{
-				"buffer_size": 8200,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/notifications.js",
-			"settings":
-			{
-				"buffer_size": 2527,
+				"buffer_size": 7784,
 				"line_ending": "Unix"
 			}
 		},
@@ -487,31 +479,23 @@
 			"file": "css/Co-Trip.css",
 			"settings":
 			{
-				"buffer_size": 2374,
+				"buffer_size": 2378,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "css/index2.2.css",
+			"file": "css/create2.0.css",
 			"settings":
 			{
-				"buffer_size": 2612,
+				"buffer_size": 542,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "js/index2.2.js",
+			"file": "js/create2.0.js",
 			"settings":
 			{
-				"buffer_size": 1273,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/tomhu/Documents/Private/Learning/J2EE 刘岩/2.examples/customTagDemo/customtag.jsp",
-			"settings":
-			{
-				"buffer_size": 991,
+				"buffer_size": 1220,
 				"line_ending": "Unix"
 			}
 		}
@@ -519,12 +503,28 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 93.0,
+		"height": 137.0,
 		"selected_items":
 		[
 			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
 				"git push",
 				"Git: Push Current Branch"
+			],
+			[
+				"git commi",
+				"Git: Commit"
+			],
+			[
+				"git add ",
+				"Git: Add..."
 			],
 			[
 				"git commit",
@@ -533,10 +533,6 @@
 			[
 				"git add...",
 				"Git: Add..."
-			],
-			[
-				"git commi",
-				"Git: Commit"
 			],
 			[
 				"git add",
@@ -611,10 +607,6 @@
 				"Git: Status"
 			],
 			[
-				"git add ",
-				"Git: Add..."
-			],
-			[
 				"gitpu",
 				"Git: Push"
 			],
@@ -651,10 +643,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"Package Control: in",
-				"Package Control: Install Package"
-			],
-			[
 				"convert to",
 				"ConvertToUTF8: Reload with Encoding"
 			],
@@ -683,11 +671,11 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 514.0
+		"width": 579.0
 	},
 	"console":
 	{
-		"height": 125.0
+		"height": 244.0
 	},
 	"distraction_free":
 	{
@@ -700,20 +688,30 @@
 	},
 	"file_history":
 	[
-		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/css/index3.css",
-		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/external/Bootstrap3.1.1/css/bootstrap.css",
-		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/css/index2.css",
+		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/index2.1.html",
+		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/index3.html",
+		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/css/index2.2.css",
 		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/css/index2.1.css",
+		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/js/index2.js",
+		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/index2.2.html",
+		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/js/settings.js",
+		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/css/settings.css",
+		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/notifications.html",
 		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/settings.html",
+		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/js/notifications.js",
 		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/external/Bootstrap3.1.1/js/bootstrap.js",
 		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/css/notifications.css",
-		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/js/notifications.js",
+		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/external/Bootstrap3.1.1/css/bootstrap.css",
+		"/Users/tomhu/Documents/Private/Learning/J2EE 刘岩/2.examples/customTagDemo/customtag.jsp",
+		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/js/index2.2.js",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/CSScomb JS/README.md",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/CSScomb JS/CSScomb JS.sublime-settings",
+		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/css/index3.css",
+		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/css/index2.css",
 		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/User/CSS.sublime-settings",
 		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/User/JavaScript.sublime-settings",
-		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/css/settings.css",
-		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/js/settings.js",
 		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/create.html",
-		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/index3.html",
 		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/index.html",
 		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/external/Bootstrap3.1.1/css/bootstrap-theme.css",
 		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/base.html",
@@ -722,12 +720,10 @@
 		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/css/create.css",
 		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/js/create.js",
 		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
 		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/SublimeTmpl/templates/js.tmpl",
 		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/User/SublimeTmpl.sublime-settings",
 		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/SublimeTmpl/SublimeTmpl.sublime-settings",
-		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/js/index2.js",
 		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/index2.html",
 		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/external/django-dynamic-formset/jquery.formset.js",
 		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/js/index3.js",
@@ -740,8 +736,6 @@
 		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/Prefixr/Default (OSX).sublime-keymap",
 		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/signup.html",
 		"/Users/tomhu/Library/Application Support/Sublime Text 2/Packages/User/HTML.sublime-settings",
-		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/index2.1.html",
-		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/notifications.html",
 		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/js/index2.1.js",
 		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/external/datetimepicker/js/bootstrap-datetimepicker.js",
 		"/Users/tomhu/Dropbox/Project/Co-Trip/Develope/Font-End/external/Bootstrap/css/bootstrap.min.css",
@@ -821,13 +815,7 @@
 		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/GameLayer.h",
 		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/ScoreLayer.cpp",
 		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/SettingLayer.h",
-		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/SettingLayer.cpp",
-		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/EnemyPaddle.cpp",
-		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/MenuLayer.h",
-		"/Users/tomhu/Documents/Learning/demo/Gemfile",
-		"/Users/tomhu/Documents/Learning/Uniweb/Task-1.html",
-		"/Users/tomhu/Documents/Learning/Uniweb/css/css-1.css",
-		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/Bounce/MenuLayer.cpp"
+		"/Users/tomhu/Downloads/Software/cocos2d-x-2.1.5/test/Classes/SettingLayer.cpp"
 	],
 	"find":
 	{
@@ -845,6 +833,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"||",
 			":last",
 			".container-",
 			"container",
@@ -959,23 +948,23 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "notifications.html",
+					"file": "create2.0.html",
 					"settings":
 					{
-						"buffer_size": 14680,
+						"buffer_size": 7784,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3866,
-								969
+								6245,
+								6245
 							]
 						],
 						"settings":
@@ -1024,7 +1013,6 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
-							"is_preview": true,
 							"is_xml": false,
 							"origin_encoding": "UTF-8",
 							"syntax": "Packages/HTML/HTML.tmLanguage",
@@ -1032,25 +1020,31 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 207.0,
+						"translation.y": 1415.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
 				{
 					"buffer": 1,
-					"file": "index2.2.html",
+					"file": "css/Co-Trip.css",
 					"settings":
 					{
-						"buffer_size": 8200,
+						"buffer_size": 2378,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								493,
-								493
+								634,
+								556
 							]
 						],
 						"settings":
@@ -1100,9 +1094,8 @@
 								"bh_single_quote_close"
 							],
 							"is_preview": true,
-							"is_xml": false,
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -1114,18 +1107,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "js/notifications.js",
+					"file": "css/create2.0.css",
 					"settings":
 					{
-						"buffer_size": 2527,
+						"buffer_size": 542,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								864,
-								864
+								539,
+								539
 							]
 						],
 						"settings":
@@ -1174,237 +1167,10 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 133.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 3,
-			"sheets":
-			[
-				{
-					"buffer": 3,
-					"file": "css/Co-Trip.css",
-					"settings":
-					{
-						"buffer_size": 2374,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								191,
-								191
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"is_preview": true,
 							"origin_encoding": "ASCII",
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 164.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "css/index2.2.css",
-					"settings":
-					{
-						"buffer_size": 2612,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1756,
-								1756
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"is_preview": true,
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1295.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "js/index2.2.js",
-					"settings":
-					{
-						"buffer_size": 1273,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								643,
-								643
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"is_preview": true,
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1413,19 +1179,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "/Users/tomhu/Documents/Private/Learning/J2EE 刘岩/2.examples/customTagDemo/customtag.jsp",
+					"buffer": 3,
+					"file": "js/create2.0.js",
 					"settings":
 					{
-						"buffer_size": 991,
+						"buffer_size": 1220,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								901,
+								901
 							]
 						],
 						"settings":
@@ -1474,8 +1240,9 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
+							"is_preview": true,
 							"origin_encoding": "ASCII",
-							"syntax": "Packages/Java/Java Server Pages (JSP).tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -1516,7 +1283,7 @@
 		"cols":
 		[
 			0.0,
-			0.562118828619,
+			0.568861073775,
 			1.0
 		],
 		"rows":
@@ -1555,6 +1322,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 246.0,
+	"side_bar_width": 217.0,
 	"status_bar_visible": true
 }

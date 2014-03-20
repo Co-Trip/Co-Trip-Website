@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Tom Hu (h1994st@gmail.com)
+ * @date    2014-02-16 15:24:10
+ * @version 1.0
+ */
+body {
+  padding-top: 50px;
+}
+html, body, main, 
+main > .row, 
+main > .row > div {
+  height: 100%;
+}
+body {
+  overflow: hidden;
+}
+main {
+  padding-bottom: 80px;
+  margin: 0 auto -80px;
+}
+footer {
+  margin-top: 0;
+}
+
+/*
+ * Co-Trip Picker
+ * --------------------------------------------------
+ */
+.CT-picker {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto; 
+  padding: 20px;
+}
+.CT-picker > .CT-picker-heading {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+.CT-picker-item .CT-picker-item-img {
+  width: 100%;
+}
+.CT-picker-item > .CT-picker-item-body {
+  margin-bottom: 20px;
+}
+.CT-picker-item > .CT-picker-item-body > .CT-picker-item-detail {
+  -webkit-transition: color ease-in-out 0.3s;
+          transition: color ease-in-out 0.3s;
+}
+.CT-picker-item.friend-item .CT-picker-item-img {
+  opacity: 0.7;
+  -webkit-transition: opacity ease-in-out 0.3s;
+          transition: opacity ease-in-out 0.3s;
+}
+.CT-picker-item.friend-item .CT-picker-item-img:hover {
+  opacity: 1;
+}
+.CT-picker-item.friend-item.item-selected .CT-picker-item-img {
+  opacity: 1;
+}
